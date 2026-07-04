@@ -1,0 +1,17 @@
+{
+  "name": "Aero Acharya",
+  "short_name": "Aero Acharya",
+  "description": "Motorsport Aerodynamics — Beginner to Advanced",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f8f5ed",
+  "theme_color": "#175679",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

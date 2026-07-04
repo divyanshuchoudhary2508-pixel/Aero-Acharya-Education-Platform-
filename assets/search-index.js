@@ -1,0 +1,113 @@
+/* Aero Acharya — Search Index
+   Flat array of searchable sections across all 10 lessons.
+   Each entry: { slug, lesson, section, text }                     */
+
+window.AERO_SEARCH_INDEX = [
+
+  /* ── Lesson 1: Air Is a Fluid ─────────────────────────────── */
+  { slug:"air-is-a-fluid", lesson:"Air Is a Fluid", section:"Why are we even starting here?",
+    text:"Before you can understand a race car wing you need the one thing that makes all aerodynamics possible: air behaves like a fluid. Air feels like nothing because you cannot see or hold it but once a car cyclist or falling leaf moves quickly air becomes very real. It pushes back bends around shapes and forms swirling wakes. Every aerodynamic device exists because engineers learned to guide this invisible fluid." },
+  { slug:"air-is-a-fluid", lesson:"Air Is a Fluid", section:"What does 'fluid' actually mean?",
+    text:"In physics a fluid is any substance that flows and takes the shape of its container. That includes liquids and gases. Water is a fluid. Air is one too. Your water intuition is useful: water bends around rocks speeds through narrow gaps and swirls behind boats. Air behaves similarly around a car although it is lighter and invisible." },
+  { slug:"air-is-a-fluid", lesson:"Air Is a Fluid", section:"Pressure is acting on you right now",
+    text:"Air constantly pushes from every direction. You do not normally notice because those pushes are balanced. A useful force appears when pressure becomes stronger on one side than another. In a simple streamline picture faster-moving air is associated with lower static pressure while slower-moving air is associated with higher static pressure." },
+  { slug:"air-is-a-fluid", lesson:"Air Is a Fluid", section:"Velocity changes everything",
+    text:"A gentle breeze barely moves a leaf; a storm can damage a roof. Both are air but speed changes the force enormously. Aerodynamic force grows roughly with the square of speed. Two times the speed means roughly four times the aerodynamic force. At race speed the pressure differences become powerful." },
+  { slug:"air-is-a-fluid", lesson:"Air Is a Fluid", section:"Laminar and turbulent flow",
+    text:"Laminar flow moves in smooth orderly layers. Turbulent flow mixes and swirls. This comparison is a useful first mental picture but turbulent flow is not automatically bad. A turbulent boundary layer can sometimes stay attached better than a laminar one. Engineers do not simply chase laminar flow everywhere they manage separation wake size and energy loss." },
+
+  /* ── Lesson 2: Drag ───────────────────────────────────────── */
+  { slug:"drag", lesson:"Drag Hunter", section:"What is drag?",
+    text:"Drag is the force that opposes a car's motion through the air. Every shape experiences drag because air must move around it and that movement always costs energy. Understanding drag is the first step to reducing it." },
+  { slug:"drag", lesson:"Drag Hunter", section:"Pressure drag and wake",
+    text:"Pressure drag is caused by a difference in pressure between the front and rear of an object. A blunt rear face leaves a large low-pressure wake. The bigger the wake the more pressure drag. Streamlining a shape reduces the wake size and therefore the pressure drag." },
+  { slug:"drag", lesson:"Drag Hunter", section:"Friction drag",
+    text:"Friction drag comes from air clinging to and rubbing along a surface. Smooth surfaces reduce friction drag. All moving surfaces experience some friction drag even a perfectly streamlined body." },
+  { slug:"drag", lesson:"Drag Hunter", section:"Shape and the drag coefficient",
+    text:"A flat plate facing the airflow has a very high drag coefficient. A sphere is better. A teardrop streamlined shape produces the least drag for its frontal area. Race cars try to be as streamlined as possible while still creating downforce." },
+  { slug:"drag", lesson:"Drag Hunter", section:"DRS — Drag Reduction System",
+    text:"DRS opens a flap in the rear wing reducing its angle of attack. This stalls the wing removing both its downforce and its drag. The car accelerates faster on straights. Closing DRS restores downforce for the corner." },
+
+  /* ── Lesson 3: Lift & Downforce ───────────────────────────── */
+  { slug:"lift-downforce", lesson:"Lift & Downforce", section:"How a wing creates force",
+    text:"A wing creates force by making air travel different distances over its two surfaces. The surface with the longer path sees air speed up and pressure drop. The other surface has slower air and higher pressure. The pressure difference across the wing produces a net force." },
+  { slug:"lift-downforce", lesson:"Lift & Downforce", section:"Inverted wing for downforce",
+    text:"An aircraft wing is shaped to generate lift upward. A race car wing is inverted so the low-pressure side faces downward pushing the car into the track. This is called downforce. More downforce means more grip in corners." },
+  { slug:"lift-downforce", lesson:"Lift & Downforce", section:"Downforce versus drag trade-off",
+    text:"Adding more downforce almost always adds more drag. Teams must find the right compromise for each track. A circuit with many fast corners rewards high downforce. A track with long straights rewards low drag even if it means less grip." },
+  { slug:"lift-downforce", lesson:"Lift & Downforce", section:"Bernoulli and the pressure difference",
+    text:"Bernoulli's principle helps explain why faster air has lower pressure. When air is squeezed through a narrower gap it must speed up. As it speeds up its static pressure drops. A wing uses its shape to produce this speed difference across its surfaces." },
+
+  /* ── Lesson 4: Airfoil Mastery ────────────────────────────── */
+  { slug:"airfoil-mastery", lesson:"Airfoil Mastery", section:"What is an airfoil?",
+    text:"If you sliced a wing from front to back and looked at the cut face that profile is the airfoil. It has a front called the leading edge a rear called the trailing edge a chord line and a camber line. The airfoil shape decides how air speeds up slows down and separates around the wing." },
+  { slug:"airfoil-mastery", lesson:"Airfoil Mastery", section:"Chord — the length of the profile",
+    text:"Chord is the straight-line distance from the leading edge to the trailing edge. A longer chord gives air more surface to act on. It can usually create more downforce but it also tends to bring more drag and weight." },
+  { slug:"airfoil-mastery", lesson:"Airfoil Mastery", section:"Camber — how curved the airfoil is",
+    text:"Camber describes how much the centreline bends. More camber usually creates a bigger speed difference between the two sides of the wing which can mean more downforce but also more drag. Camber is basically the wing's curvature dial." },
+  { slug:"airfoil-mastery", lesson:"Airfoil Mastery", section:"Thickness — strength versus drag",
+    text:"A thin airfoil can be aerodynamically clean but real wings must survive serious loads. A thicker airfoil is usually stronger while also adding some drag and surface interaction. Real race wings are never just razor blades; they must work aerodynamically and structurally." },
+  { slug:"airfoil-mastery", lesson:"Airfoil Mastery", section:"Angle of attack and stall",
+    text:"Angle of attack is the wing's tilt relative to incoming air. Increase it a little and downforce usually rises. Push it too far and the flow can separate causing stall: the wing stops working cleanly. Too much angle means flow separates and downforce collapses." },
+
+  /* ── Lesson 5: Front Wing Engineer ────────────────────────── */
+  { slug:"front-wing-engineer", lesson:"Front Wing Engineer", section:"Two jobs of the front wing",
+    text:"The front wing is the first part of the car to meet clean air. Its first job is to create front downforce. Its second job is to send useful air toward the rest of the car. A bad front wing can hurt the floor sidepods and rear of the car even if it makes load by itself." },
+  { slug:"front-wing-engineer", lesson:"Front Wing Engineer", section:"Outwash around the front tyre",
+    text:"Open-wheel tyres create a messy turbulent wake. The front wing can redirect some air outward around the tyre helping cleaner air reach the floor and body behind it. Outwash is not decoration; it is airflow management for everything downstream." },
+  { slug:"front-wing-engineer", lesson:"Front Wing Engineer", section:"Vortices — controlled swirling air",
+    text:"A vortex is a rotating column of air. Usually we think of turbulence as wasteful but a controlled vortex can act like a tool helping guide airflow where the designer wants it to go. Wingtip vortices on aircraft are a real-world cousin of this idea." },
+  { slug:"front-wing-engineer", lesson:"Front Wing Engineer", section:"Why CFD and wind tunnels matter",
+    text:"The front wing elements rotating tyre and car floor all influence each other at the same time. That is why front wings are one of the most studied and regulated parts of modern F1 aerodynamics. A simple formula-based playground would not be honest; real teams use CFD and wind tunnels for this problem." },
+
+  /* ── Lesson 6: Rear Wing Master ───────────────────────────── */
+  { slug:"rear-wing-master", lesson:"Rear Wing Master", section:"Why the rear wing carries more load",
+    text:"The rear axle carries more of the car's weight and all drive power goes through the rear tyres. More rear downforce means better traction under acceleration. That is why rear wings typically need to create more downforce than front wings." },
+  { slug:"rear-wing-master", lesson:"Rear Wing Master", section:"Multi-element rear wings",
+    text:"A rear wing usually has two or more elements. Each element can be tuned separately. Together they can create more total downforce than a single wing of the same size because each element works in slightly separated air." },
+  { slug:"rear-wing-master", lesson:"Rear Wing Master", section:"DRS — Drag Reduction System",
+    text:"DRS opens a flap in the rear wing reducing its angle of attack. This removes a large fraction of the wing's drag helping the following car catch up on straights. Closing DRS before a corner restores the downforce for braking and turning." },
+  { slug:"rear-wing-master", lesson:"Rear Wing Master", section:"Gurney flaps",
+    text:"A Gurney flap is a small lip fitted to the trailing edge of a wing. It adds a useful extra amount of downforce for very little additional drag. The Gurney flap was popularised by driver Dan Gurney and has been used in motorsport for decades." },
+
+  /* ── Lesson 7: Venturi Theory ─────────────────────────────── */
+  { slug:"venturi-theory", lesson:"Venturi Theory", section:"The Venturi effect",
+    text:"When a fluid passes through a narrowing channel it must speed up to maintain flow. As it speeds up its static pressure drops. This is the Venturi effect. Race car designers use this principle to make the space under the car act like a low-pressure zone that sucks the car toward the track." },
+  { slug:"venturi-theory", lesson:"Venturi Theory", section:"Ground effect and the underfloor",
+    text:"Ground effect works because the underfloor of the car acts as a Venturi tunnel. Air squeezed between the flat floor and the track surface speeds up and loses pressure. The low pressure under the car pushes the car downward. Ground effect can create huge downforce with relatively little drag." },
+  { slug:"venturi-theory", lesson:"Venturi Theory", section:"Porpoising — when ground effect stalls",
+    text:"If the underfloor gets too close to the ground the flow stalls and downforce suddenly collapses. The car rises because the downforce dropped. Flow re-attaches and downforce returns. The car drops again. This cycling up and down is called porpoising and was a significant problem when ground effect returned to F1 in 2022." },
+  { slug:"venturi-theory", lesson:"Venturi Theory", section:"Why ground effect was banned in 1983",
+    text:"Ground effect was banned in F1 in 1983 because the downforce it produced was so powerful and so sensitive to ride height that accidents at high speed became very dangerous. It returned in 2022 under strict regulations." },
+
+  /* ── Lesson 8: Diffusers & Floors ─────────────────────────── */
+  { slug:"diffusers-floors", lesson:"Diffusers & Floors", section:"What a diffuser does",
+    text:"The diffuser is at the rear of the underfloor. Its job is to slowly expand the high-speed low-pressure air that has passed under the car and smoothly return it to normal speed and pressure. Done correctly this keeps the underfloor suction working efficiently." },
+  { slug:"diffusers-floors", lesson:"Diffusers & Floors", section:"Why the diffuser must expand gradually",
+    text:"If the diffuser expands too abruptly the flow separates from its walls. When flow separates the low-pressure zone under the car weakens and downforce drops. Gradual expansion keeps the air attached to the diffuser walls and the system working." },
+  { slug:"diffusers-floors", lesson:"Diffusers & Floors", section:"The floor as a downforce generator",
+    text:"In modern ground-effect cars the floor is the primary downforce generator. Shaped tunnels and channels in the floor create large low-pressure zones. The floor can produce more downforce than the front and rear wings combined in a well-designed car." },
+  { slug:"diffusers-floors", lesson:"Diffusers & Floors", section:"Sealing the floor edges",
+    text:"High-pressure air from outside the car wants to leak under the floor and fill the low-pressure zone destroying downforce. Side seals skirts or edge vanes are used to block this leakage. Keeping the underfloor sealed is critical to maintaining ground effect downforce." },
+
+  /* ── Lesson 9: Aero Balance ───────────────────────────────── */
+  { slug:"aero-balance", lesson:"Aero Balance", section:"Total downforce is not the whole story",
+    text:"A car with lots of downforce can still feel terrible if the load is in the wrong place. The front wing floor and rear wing all add downforce at different locations. The driver feels the relationship between front grip and rear grip not just the total number." },
+  { slug:"aero-balance", lesson:"Aero Balance", section:"Understeer and oversteer",
+    text:"Understeer means the front refuses to turn in and the car runs wide. Oversteer means the rear rotates more than intended and the back feels loose. These are balance problems not simply more downforce fixes everything problems." },
+  { slug:"aero-balance", lesson:"Aero Balance", section:"Center of pressure",
+    text:"The center of pressure is the point where you can imagine all the car's downforce acting together. If it shifts forward the car becomes more front-biased. If it shifts rearward it becomes more rear-biased. Engineers adjust wing settings and floor setup to control where the center of pressure sits." },
+  { slug:"aero-balance", lesson:"Aero Balance", section:"Shifting balance between corners",
+    text:"Increasing front wing load moves balance forward. Increasing rear wing load moves balance rearward. A slow sharp corner can reward more front bite. A fast sweeping corner often wants neutral or rear-biased stability. This is why setup is never one-size-fits-all." },
+
+  /* ── Lesson 10: Cooling & Packaging ───────────────────────── */
+  { slug:"cooling-packaging", lesson:"Cooling & Packaging", section:"Why a race car needs cooling",
+    text:"Engines electronics and other systems create heat. That heat has to leave the car reliably. Radiators use moving air to carry heat away. More airflow through the cooling system can improve reliability but it usually costs aerodynamic performance." },
+  { slug:"cooling-packaging", lesson:"Cooling & Packaging", section:"More cooling air usually means more drag",
+    text:"Air intakes are openings in the bodywork. They feed radiators but they also interrupt smooth external airflow. That is the core cooling-versus-drag compromise. Safe cooling is important but oversized cooling can cost lap time every straight." },
+  { slug:"cooling-packaging", lesson:"Cooling & Packaging", section:"Sidepod intake size is a design decision",
+    text:"A larger intake gives more cooling margin but usually more drag. A smaller intake can be cleaner aerodynamically but leaves less safety margin in hot conditions or long high-load running. The right answer changes with weather track engine demand and car concept." },
+  { slug:"cooling-packaging", lesson:"Cooling & Packaging", section:"Packaging — fitting everything inside a useful shape",
+    text:"Packaging means fitting engine cooling ducts fuel system electronics and structures inside a body shape that still works aerodynamically. Every space claim becomes a compromise. Good packaging helps cooling reliability drag and even floor airflow." }
+
+];

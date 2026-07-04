@@ -1,0 +1,90 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .wing-main { fill: #f8f5ed; stroke: #175679; stroke-width: 4; stroke-linejoin: round; }
+      
+      .particle {
+        fill: none;
+        stroke: #2278a9;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-dasharray: 15 1500;
+        animation: flow linear infinite;
+      }
+      
+      .turbulent {
+        fill: none;
+        stroke: #d9534f;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-dasharray: 20 300;
+        animation: flow linear infinite;
+        opacity: 0.8;
+      }
+      
+      @keyframes flow {
+        from { stroke-dashoffset: 1500; }
+        to { stroke-dashoffset: 0; }
+      }
+    </style>
+  </defs>
+
+  <!-- TOP HALF: DRS Closed (High Downforce & Drag) -->
+  <g transform="translate(0, 50)">
+    <text x="400" y="20" font-family="Inter, sans-serif" font-weight="700" font-size="18" fill="#d9534f" text-anchor="middle">DRS CLOSED: HIGH DOWNFORCE &amp; DRAG</text>
+    
+    <!-- Wake Shading -->
+    <path d="M 450,40 C 600,0 800,0 800,0 L 800,180 C 800,180 600,150 450,150 Z" fill="#d9534f" opacity="0.05" />
+    
+    <!-- Main Plane (upside down airfoil) -->
+    <path class="wing-main" d="M 200,100 C 200,170 350,200 400,140 C 320,140 250,90 200,100 Z" />
+    
+    <!-- Flap (Closed - Steep Angle) -->
+    <path class="wing-main" d="M 390,120 Q 420,110 460,50 Q 440,80 395,115 Z" />
+    
+    <!-- Airflow over Main Plane & Flap (is pushed up sharply by the flap) -->
+    <path class="particle" style="animation-duration: 2s; animation-delay: 0s" d="M 0,100 L 150,100 C 250,90 350,80 400,30 C 450,-10 500,0 800,0" />
+    <path class="particle" style="animation-duration: 2s; animation-delay: -1s" d="M 0,100 L 150,100 C 250,90 350,80 400,30 C 450,-10 500,0 800,0" />
+    
+    <path class="particle" style="animation-duration: 1.8s; animation-delay: -0.5s" d="M 0,60 L 150,60 C 300,50 350,50 430,0 L 800,0" />
+    <path class="particle" style="animation-duration: 1.8s; animation-delay: -1.4s" d="M 0,60 L 150,60 C 300,50 350,50 430,0 L 800,0" />
+    
+    <!-- Airflow under Main Plane (fast, low pressure, gets scooped up) -->
+    <path class="particle" style="animation-duration: 1.5s; animation-delay: -0.2s" d="M 0,140 C 150,140 250,200 400,160 C 450,140 500,160 800,160" />
+    <path class="particle" style="animation-duration: 1.5s; animation-delay: -0.9s" d="M 0,140 C 150,140 250,200 400,160 C 450,140 500,160 800,160" />
+    
+    <!-- Turbulent Wake from the steep flap -->
+    <path class="turbulent" style="animation-duration: 2.5s; animation-delay: 0s" d="M 450,80 Q 500,30 550,100 T 650,50 T 800,100" />
+    <path class="turbulent" style="animation-duration: 2.2s; animation-delay: -0.8s" d="M 420,120 Q 480,180 520,130 T 680,160 T 800,120" />
+    <path class="turbulent" style="animation-duration: 2.8s; animation-delay: -1.5s" d="M 470,100 Q 520,150 580,90 T 700,140 T 800,80" />
+  </g>
+
+  <!-- BOTTOM HALF: DRS Open (Low Drag) -->
+  <g transform="translate(0, 350)">
+    <text x="400" y="0" font-family="Inter, sans-serif" font-weight="700" font-size="18" fill="#175679" text-anchor="middle">DRS OPEN: FLAP OPENS TO SHED DRAG</text>
+    
+    <!-- Wake Shading (Clean) -->
+    <path d="M 500,130 L 800,130" stroke="#175679" stroke-width="30" opacity="0.05" />
+    
+    <!-- Main Plane (same) -->
+    <path class="wing-main" d="M 200,100 C 200,170 350,200 400,140 C 320,140 250,90 200,100 Z" />
+    
+    <!-- Flap (Open - Horizontal) -->
+    <path class="wing-main" d="M 390,120 Q 440,110 480,120 Q 440,125 390,125 Z" />
+    
+    <!-- Clean flow straight through the slot gap and over the flap -->
+    <path class="particle" style="animation-duration: 2s; animation-delay: 0s" d="M 0,100 L 150,100 C 250,90 350,100 400,100 L 800,100" />
+    <path class="particle" style="animation-duration: 2s; animation-delay: -1s" d="M 0,100 L 150,100 C 250,90 350,100 400,100 L 800,100" />
+    
+    <path class="particle" style="animation-duration: 1.8s; animation-delay: -0.4s" d="M 0,140 C 100,140 250,200 400,150 C 450,130 500,130 800,130" />
+    <path class="particle" style="animation-duration: 1.8s; animation-delay: -1.3s" d="M 0,140 C 100,140 250,200 400,150 C 450,130 500,130 800,130" />
+    
+    <!-- Flow shooting THROUGH the gap! -->
+    <path class="particle" style="stroke: #175679; stroke-width: 4; animation-duration: 1.5s; animation-delay: -0.7s" d="M 0,120 L 150,120 C 250,120 300,130 380,130 L 400,110 L 800,110" />
+    <path class="particle" style="stroke: #175679; stroke-width: 4; animation-duration: 1.5s; animation-delay: -1.4s" d="M 0,120 L 150,120 C 250,120 300,130 380,130 L 400,110 L 800,110" />
+    
+    <!-- Outer flow -->
+    <path class="particle" style="animation-duration: 2s; animation-delay: -0.2s" d="M 0,60 C 100,60 200,60 350,80 L 800,80" />
+    <path class="particle" style="animation-duration: 2s; animation-delay: -1.2s" d="M 0,60 C 100,60 200,60 350,80 L 800,80" />
+  </g>
+</svg>

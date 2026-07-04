@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="manifest" href="manifest.json">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f8f5ed">
+  <meta name="description" content="Free, visual motorsport aerodynamics lessons for complete beginners.">
+  <title>Aero Acharya - Aerodynamics, explained simply</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/search-index.js" defer></script>
+  <script src="assets/quiz-data.js" defer></script>
+  <script src="assets/site.js" defer></script>
+  <script src="assets/search.js" defer></script>
+  <script src="assets/enhancements.js" defer></script>
+  <script src="assets/achievements.js" defer></script>
+</head>
+<body>
+  <header class="site-header wrap">
+    <a class="brand" href="./"><span class="brand-mark">A</span><span>Aero Acharya</span></a>
+    <button class="menu-button" data-menu aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav data-nav><a href="#modules">Modules</a><a href="#about">About</a><a href="glossary.html">Glossary</a><button class="search-btn" data-search-open aria-label="Search lessons"><span>🔍</span><span>Search</span><kbd>Ctrl K</kbd></button><button class="theme-toggle" data-theme-toggle></button></nav>
+  </header>
+
+  <main>
+    <section class="home-hero wrap">
+      <div class="hero-copy">
+        <p class="kicker">AERODYNAMICS FOR EVERYONE</p>
+        <h1>Air is invisible.<br><em>Understanding it</em><br>doesn&apos;t have to be.</h1>
+        <p>A free, visual guide to motorsport aerodynamics - explained like a senior friend would, without assuming you already know the science.</p>
+        <div class="hero-actions"><a class="button" href="modules/air-is-a-fluid/">Start with the basics <span>→</span></a><a class="quiet-link" href="#modules">See all modules ↓</a></div>
+        <small>♥ No sign-up. No paywall. Just learning.</small>
+      </div>
+      <div class="hero-diagram" aria-label="Airflow around an aerofoil">
+        <div class="air-line a"></div><div class="air-line b"></div><div class="air-line c"></div><div class="air-line d"></div>
+        <div class="foil"></div><p>Start with one simple idea:<br><b>shape changes airflow.</b></p>
+      </div>
+    </section>
+
+    <section class="feature-strip">
+      <div><b>✎ Friendly notes</b><small>Clear explanations</small></div>
+      <div><b>◎ Visual diagrams</b><small>See the invisible</small></div>
+      <div><b>◇ Optional 3D</b><small>Click-to-load models</small></div>
+      <div><b>▷ Video ready</b><small>Add lessons later</small></div>
+      <div><b>▤ Real references</b><small>Keep going deeper</small></div>
+    </section>
+
+    <section class="modules wrap" id="modules">
+      <div class="section-heading">
+        <div><p class="kicker">YOUR LEARNING PATH</p><h2>Ten lessons. One clean story.</h2></div>
+        <p>Start from air itself, then build toward wings, floors, balance and cooling. Everything is free, visual and beginner-first.</p>
+      </div>
+      <div id="continue-banner"></div>
+      <div id="progress-bar"></div>
+      <div class="module-grid">
+        <a class="module-card blue" href="modules/air-is-a-fluid/"><div class="module-art"><img src="assets/images/module-1/air-pressure.jpg" alt="Air pressure around a car"></div><div class="module-copy"><span>LESSON 01</span><h3>Air Is a Fluid</h3><p>Meet the invisible thing that makes every aero part work.</p><b>Read lesson →</b></div></a>
+        <a class="module-card orange" href="modules/drag/"><div class="module-art"><img src="assets/images/module-2/shape-drag.jpg" alt="Drag behind different shapes"></div><div class="module-copy"><span>LESSON 02</span><h3>Drag Hunter</h3><p>Why air pushes back, and how shape changes everything.</p><b>Read lesson →</b></div></a>
+        <a class="module-card green" href="modules/lift-downforce/"><div class="module-art"><img src="assets/images/module-3/downforce.jpg" alt="Downforce on an inverted wing"></div><div class="module-copy"><span>LESSON 03</span><h3>Lift &amp; Downforce</h3><p>How wings turn moving air into usable grip.</p><b>Read lesson →</b></div></a>
+        <a class="module-card purple" href="modules/airfoil-mastery/"><div class="module-art"><img src="assets/images/module-4/airfoil-anatomy.jpg" alt="Labeled airfoil anatomy"></div><div class="module-copy"><span>LESSON 04</span><h3>Airfoil Mastery</h3><p>Chord, camber, thickness and angle of attack.</p><b>Read lesson →</b></div></a>
+        <a class="module-card teal" href="modules/front-wing-engineer/"><div class="module-art"><img src="assets/images/module-5/front-wing-jobs.jpg" alt="Front wing two main jobs"></div><div class="module-copy"><span>LESSON 05</span><h3>Front Wing Engineer</h3><p>The first wing creates load and prepares air for the car.</p><b>Read lesson →</b></div></a>
+        <a class="module-card red" href="modules/rear-wing-master/"><div class="module-art"><img src="assets/images/module-6/drs-open-closed.jpg" alt="DRS open and closed comparison"></div><div class="module-copy"><span>LESSON 06</span><h3>Rear Wing Master</h3><p>Balance, multi-element wings and DRS.</p><b>Read lesson →</b></div></a>
+        <a class="module-card green" href="modules/venturi-theory/"><div class="module-art"><img src="assets/images/module-7/ground-effect.jpg" alt="Ground effect airflow under a car"></div><div class="module-copy"><span>LESSON 07</span><h3>Venturi Theory</h3><p>Why the empty space under the car can make huge downforce.</p><b>Read lesson →</b></div></a>
+        <a class="module-card purple" href="modules/diffusers-floors/"><div class="module-art"><img src="assets/images/module-8/complete-ground-effect.jpg" alt="Complete ground effect airflow story"></div><div class="module-copy"><span>LESSON 08</span><h3>Diffusers &amp; Floors</h3><p>How fast underbody air exits without destroying downforce.</p><b>Read lesson →</b></div></a>
+        <a class="module-card blue" href="modules/aero-balance/"><div class="module-art"><img src="assets/images/module-9/center-pressure.jpg" alt="Center of pressure on a race car"></div><div class="module-copy"><span>LESSON 09</span><h3>Aero Balance</h3><p>It is not just how much downforce - it is where it acts.</p><b>Read lesson →</b></div></a>
+        <a class="module-card orange" href="modules/cooling-packaging/"><div class="module-art"><img src="assets/images/module-10/packaging.jpg" alt="Race car packaging diagram"></div><div class="module-copy"><span>LESSON 10</span><h3>Cooling &amp; Packaging</h3><p>Keeping the car alive without ruining the airflow.</p><b>Read lesson →</b></div></a>
+      </div>
+    </section>
+
+    <section class="wrap" id="achievements-section"></section>
+
+    <section class="about" id="about">
+      <p class="kicker">WHY AERO ACHARYA?</p>
+      <blockquote>“A good explanation should make you curious,<br>not make you feel small.”</blockquote>
+      <p>This is a growing, free digital book for curious beginners. No jargon competition, no sales pitch - just carefully made lessons that help aerodynamics click.</p>
+      <a class="button" href="modules/air-is-a-fluid/">Begin lesson one →</a>
+      <p style="margin-top:20px"><button class="quiet-link" style="background:none;border:none;cursor:pointer;font:inherit;font-size:14px" data-open-certificate>📜 Claim your certificate</button></p>
+    </section>
+  </main>
+
+  <footer class="wrap"><a class="brand" href="./"><span class="brand-mark">A</span>Aero Acharya</a><p>Free knowledge, made with care.</p><a href="glossary.html">Glossary</a><p>© 2026 Aero Acharya</p></footer>
+  <button id="back-to-top" aria-label="Back to top">↑ Top</button>
+</body>
+</html>

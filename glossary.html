@@ -1,0 +1,164 @@
+<!doctype html><html lang="en"><head>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#175679">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A searchable glossary of key aerodynamics terms used in Aero Acharya's ten lessons.">
+<title>Aerodynamics Glossary — Aero Acharya</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/styles.css">
+<script src="assets/search-index.js" defer></script>
+<script src="assets/quiz-data.js" defer></script>
+<script src="assets/site.js" defer></script>
+<script src="assets/search.js" defer></script>
+<script src="assets/enhancements.js" defer></script>
+<script src="assets/achievements.js" defer></script>
+</head><body>
+
+<div id="reading-progress-bar" style="position:fixed;top:0;left:0;width:100%;height:3px;z-index:998;background:transparent;pointer-events:none"><div id="reading-progress" style="height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--green));transition:width .1s linear"></div></div>
+
+<header class="site-header wrap">
+  <a class="brand" href="/"><span class="brand-mark">A</span>Aero Acharya</a>
+  <button class="menu-button" data-menu aria-label="Open menu">☰</button>
+  <nav data-nav>
+    <a href="/#modules">Modules</a>
+    <a href="glossary.html" style="color:var(--ink)">Glossary</a>
+    <a href="/#about">About</a>
+    <button class="search-btn" data-search-open aria-label="Search lessons"><span>🔍</span><span>Search</span><kbd>Ctrl K</kbd></button>
+    <button class="theme-toggle" data-theme-toggle></button>
+  </nav>
+</header>
+
+<main class="wrap" style="padding-block:60px 100px;max-width:860px">
+  <p class="kicker">REFERENCE</p>
+  <h1 style="font:500 clamp(42px,5vw,64px)/1 Georgia,serif;letter-spacing:-.04em;margin:10px 0 16px">Aerodynamics<br>Glossary</h1>
+  <p style="color:var(--muted);font-size:16px;max-width:560px;margin:0 0 40px">33 key terms from the world of motorsport aerodynamics, explained in plain language.</p>
+
+  <div style="position:sticky;top:0;z-index:10;background:var(--paper);padding-block:14px;margin-bottom:32px;border-bottom:1px solid var(--line)">
+    <input id="glossary-search" type="search" placeholder="Filter terms…" autocomplete="off"
+      style="width:100%;padding:12px 18px;border:1px solid var(--line);border-radius:999px;font:15px Inter,sans-serif;background:var(--card);color:var(--ink);outline:none">
+  </div>
+
+  <dl class="glossary-list" id="glossary-list">
+
+    <dt>Aerodynamics</dt>
+    <dd>The study of how air moves around solid objects and the forces — lift, downforce, and drag — it creates as a result.</dd>
+
+    <dt>Angle of Attack</dt>
+    <dd>The angle between an airfoil's chord line and the direction of the oncoming airflow. A larger angle generally increases downforce, up to the point of stall.</dd>
+
+    <dt>Boundary Layer</dt>
+    <dd>The thin layer of air immediately adjacent to a surface. Speed ranges from zero right at the surface to the full freestream value a short distance away. Its behaviour — laminar or turbulent — strongly influences drag and separation.</dd>
+
+    <dt>Camber</dt>
+    <dd>The curvature of an airfoil's mean line relative to the chord. Higher camber increases downforce potential but also increases drag. A symmetrical airfoil has zero camber.</dd>
+
+    <dt>Centre of Pressure (CoP)</dt>
+    <dd>The single point through which the total aerodynamic resultant force can be imagined to act. Moving the CoP forward biases the car toward understeer; moving it rearward biases toward oversteer.</dd>
+
+    <dt>Chord</dt>
+    <dd>The straight-line distance from the leading edge to the trailing edge of an airfoil. It is the reference length against which thickness, camber, and other ratios are measured.</dd>
+
+    <dt>Diffuser</dt>
+    <dd>A gradually widening duct at the rear underside of a race car. Its job is to decelerate fast underfloor air smoothly and recover its pressure, sustaining the low-pressure zone under the car.</dd>
+
+    <dt>Downforce</dt>
+    <dd>A vertical aerodynamic force directed toward the track surface. It increases tyre normal load and therefore the grip available for cornering, braking, and acceleration.</dd>
+
+    <dt>Drag</dt>
+    <dd>The aerodynamic resistance force opposing forward motion. It has two main components: pressure (form) drag from the wake and skin-friction drag from air rubbing along surfaces.</dd>
+
+    <dt>Drag Coefficient (C<sub>d</sub>)</dt>
+    <dd>A dimensionless number summarising how streamlined a shape is, independent of speed, density, or size. A lower C<sub>d</sub> means less drag for a given frontal area and conditions.</dd>
+
+    <dt>DRS (Drag Reduction System)</dt>
+    <dd>A movable rear wing flap in Formula 1 that opens on designated straights, reducing the wing's angle of attack, cutting drag and gaining significant top speed.</dd>
+
+    <dt>Dynamic Pressure</dt>
+    <dd>The pressure associated with a fluid's motion, equal to ½ × density × speed². This is the quantity that drives all aerodynamic forces — double the speed and dynamic pressure quadruples.</dd>
+
+    <dt>Flow Separation</dt>
+    <dd>The point at which the boundary layer detaches from a surface. A low-pressure, recirculating wake forms downstream, significantly increasing pressure drag.</dd>
+
+    <dt>Form Drag</dt>
+    <dd>See <em>Pressure Drag</em>.</dd>
+
+    <dt>Ground Effect</dt>
+    <dd>Enhanced downforce produced by the underfloor of a race car as it squeezes airflow between the car body and the track, exploiting the Venturi effect to create a large low-pressure zone.</dd>
+
+    <dt>Gurney Flap</dt>
+    <dd>A small vertical tab at the trailing edge of a wing, typically 1–2% of chord in height. It creates a separation bubble that effectively increases circulation, gaining downforce for a modest drag penalty.</dd>
+
+    <dt>Induced Drag</dt>
+    <dd>Drag that is a byproduct of generating lift or downforce. It arises from the vortices shed at the wing tips as the pressure tries to equalise from the high-pressure side to the low-pressure side.</dd>
+
+    <dt>Laminar Flow</dt>
+    <dd>Smooth, orderly airflow where layers slide past each other without mixing. Laminar flow has lower skin friction than turbulent flow, but is more prone to separation under adverse pressure gradients.</dd>
+
+    <dt>Lift</dt>
+    <dd>An aerodynamic force perpendicular to the direction of airflow. On aircraft wings it acts upward; on race car wings it is inverted to act downward (downforce).</dd>
+
+    <dt>Outwash</dt>
+    <dd>The intentional sideways deflection of airflow by a front wing's outer sections, steering it around the front tyres to keep the floor inlets and downstream surfaces supplied with cleaner air.</dd>
+
+    <dt>Porpoising</dt>
+    <dd>A rapid oscillation in which downforce pulls the car down until underfloor flow stalls, downforce collapses, the car rises, flow reattaches, downforce returns, and the cycle repeats.</dd>
+
+    <dt>Pressure</dt>
+    <dd>The force per unit area exerted by air molecules on a surface. Differences in pressure across a surface are the fundamental mechanism behind lift, downforce, and drag.</dd>
+
+    <dt>Pressure Drag</dt>
+    <dd>Drag caused by the pressure imbalance between the high-pressure stagnation at the front of an object and the low-pressure separated wake at the rear. Also called form drag.</dd>
+
+    <dt>Ride Height</dt>
+    <dd>The gap between the underside of the car and the track surface. In ground-effect cars, ride height critically affects the underfloor Venturi geometry and therefore downforce.</dd>
+
+    <dt>Sidepod</dt>
+    <dd>The aerodynamic bodywork on the sides of a race car that houses the radiators and cooling ducts. Sidepod shape is a major aerodynamic design variable — especially its inlet size and undercut.</dd>
+
+    <dt>Skin-Friction Drag</dt>
+    <dd>Drag caused by viscous shear stress as air moves along the surface of an object. Every wetted surface contributes. Smooth, tightly fitted bodywork minimises this component.</dd>
+
+    <dt>Stall</dt>
+    <dd>A sudden loss of downforce (or lift) that occurs when an airfoil's angle of attack exceeds a critical value and the flow separates from the upper surface, destroying the pressure distribution.</dd>
+
+    <dt>Strakes</dt>
+    <dd>Small vertical fins mounted on the diffuser or floor edges to manage airflow laterally, prevent cross-flow, and help maintain the integrity of the diffuser's pressure recovery.</dd>
+
+    <dt>Turbulent Flow</dt>
+    <dd>Chaotic, mixing airflow with rapid fluctuations in velocity and direction. It has higher skin-friction drag than laminar flow but is more resistant to separation.</dd>
+
+    <dt>Venturi Effect</dt>
+    <dd>The pressure drop that occurs when a fluid is forced through a narrowing passage. The fluid speeds up to conserve mass flow, and by Bernoulli's principle its static pressure drops.</dd>
+
+    <dt>Vortex</dt>
+    <dd>A rotating column or tube of air. Engineers deliberately generate vortices — for example from cascade tips on front wings — to act as rotating seals that direct airflow precisely where it is needed.</dd>
+
+    <dt>Wake</dt>
+    <dd>The disturbed, low-energy, often turbulent region of air left behind a moving object. A large wake indicates a large pressure-drag penalty. Cars following closely in a wake experience reduced downforce (dirty air).</dd>
+
+    <dt>Wing Loading</dt>
+    <dd>The amount of downforce a wing generates. Higher wing loading means more cornering grip but also more induced and pressure drag.</dd>
+
+  </dl>
+</main>
+
+<footer class="wrap">
+  <a class="brand" href="/"><span class="brand-mark">A</span>Aero Acharya</a>
+  <span>© 2025 Aero Acharya · Free to learn, forever</span>
+  <a href="/#modules">All Modules</a>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">↑ Top</button>
+
+<script>
+  document.getElementById('glossary-search')?.addEventListener('input', function () {
+    const q = this.value.toLowerCase().trim();
+    document.querySelectorAll('#glossary-list dt').forEach(dt => {
+      const dd = dt.nextElementSibling;
+      const match = !q || dt.textContent.toLowerCase().includes(q) || dd?.textContent.toLowerCase().includes(q);
+      dt.style.display = match ? '' : 'none';
+      if (dd) dd.style.display = match ? '' : 'none';
+    });
+  });
+</script>
+</body></html>

@@ -1,0 +1,344 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1969,
+      "max": [
+        2.943533182144165,
+        2.5279347896575928,
+        3.2802183628082275
+      ],
+      "min": [
+        -0.9893895387649536,
+        -1.8510700464248657,
+        -3.2802183628082275
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 23628,
+      "componentType": 5126,
+      "count": 1969,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 3480,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 47256,
+      "componentType": 5126,
+      "count": 12773,
+      "max": [
+        1.0000001192092896,
+        0.9318365454673767,
+        0.2050832211971283
+      ],
+      "min": [
+        -1.000000238418579,
+        -1.0722649097442627,
+        -0.06738368421792984
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 200532,
+      "componentType": 5126,
+      "count": 12773,
+      "max": [
+        1.0,
+        0.5263203978538513,
+        0.9999867081642151
+      ],
+      "min": [
+        -1.0,
+        -0.4290784001350403,
+        -0.9995675683021545
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 13920,
+      "componentType": 5125,
+      "count": 19392,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 353808,
+      "componentType": 5126,
+      "count": 8587,
+      "max": [
+        1.0000001192092896,
+        0.9911503791809082,
+        0.09202904254198074
+      ],
+      "min": [
+        -1.0000001192092896,
+        -0.9995929002761841,
+        -0.004353133030235767
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 456852,
+      "componentType": 5126,
+      "count": 8587,
+      "max": [
+        1.0,
+        0.9923957586288452,
+        0.9999985098838806
+      ],
+      "min": [
+        -1.0,
+        -0.970033586025238,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 91488,
+      "componentType": 5125,
+      "count": 13632,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "RoyalBlond (https://sketchfab.com/Oriol-Plazas)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/f1-2021-rear-wing-94854a2f73d64d778ac6b0f9b0b04271",
+      "title": "F1 2021 Rear Wing"
+    },
+    "generator": "Sketchfab-17.15.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 146016,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 559896,
+      "byteOffset": 146016,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 705912,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Scene_-_Root",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.230740048524349,
+          0.22696587351009836,
+          0.22696587351009836,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Plano_006",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Plano_008",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3
+          },
+          "indices": 5,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Plano_007",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 6
+          },
+          "indices": 8,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2,
+        4,
+        6
+      ],
+      "name": "USDRoot"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        7.542040769692449e-09,
+        0.0,
+        -0.0998973548412323,
+        0.0,
+        0.0,
+        0.0998973548412323,
+        0.0,
+        0.0,
+        0.0998973548412323,
+        0.0,
+        7.542040769692449e-09,
+        0.0,
+        -4.3403642430870157e-17,
+        1.3302834033966064,
+        -0.1954726278781891,
+        1.0
+      ],
+      "name": "endplate_trasero"
+    },
+    {
+      "mesh": 0,
+      "name": "Plano_006"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        0.31151849031448364,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.031555626541376114,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.31151849031448364,
+        0.0,
+        0.0,
+        1.382391095161438,
+        -0.16641680896282196,
+        1.0
+      ],
+      "name": "Plano_alar_2"
+    },
+    {
+      "mesh": 1,
+      "name": "Plano_008"
+    },
+    {
+      "children": [
+        7
+      ],
+      "matrix": [
+        0.3144833743572235,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.07805520296096802,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.3144833743572235,
+        0.0,
+        0.0,
+        1.2829784154891968,
+        -0.2179654836654663,
+        1.0
+      ],
+      "name": "plano_alar_1"
+    },
+    {
+      "mesh": 2,
+      "name": "Plano_007"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Car radiator
+* source:	https://sketchfab.com/3d-models/car-radiator-7694147996f54ee28d58d81566440b8e
+* author:	flow3d (https://sketchfab.com/flow3d)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Car radiator" (https://sketchfab.com/3d-models/car-radiator-7694147996f54ee28d58d81566440b8e) by flow3d (https://sketchfab.com/flow3d) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

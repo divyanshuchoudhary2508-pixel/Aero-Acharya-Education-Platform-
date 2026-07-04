@@ -1,0 +1,11 @@
+Model Information:
+* title:	RADIATOR
+* source:	https://sketchfab.com/3d-models/radiator-461ab629bf76409abdeb18d2cc9bdcb9
+* author:	VR DESIGNER (https://sketchfab.com/vr.designer_09)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "RADIATOR" (https://sketchfab.com/3d-models/radiator-461ab629bf76409abdeb18d2cc9bdcb9) by VR DESIGNER (https://sketchfab.com/vr.designer_09) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

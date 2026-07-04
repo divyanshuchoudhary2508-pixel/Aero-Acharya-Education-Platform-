@@ -1,0 +1,86 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Styles for particles -->
+  <defs>
+    <style>
+      .shape { fill: #f8f5ed; stroke: #175679; stroke-width: 4; }
+      
+      .particle {
+        fill: none;
+        stroke: #2278a9;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-dasharray: 15 1500;
+        animation: flow linear infinite;
+      }
+      
+      .turbulent {
+        fill: none;
+        stroke: #d9534f;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-dasharray: 20 300;
+        animation: flow linear infinite;
+        opacity: 0.8;
+      }
+      
+      @keyframes flow {
+        from { stroke-dashoffset: 1500; }
+        to { stroke-dashoffset: 0; }
+      }
+    </style>
+  </defs>
+
+  <!-- TOP HALF: Flat Plate (High Drag) -->
+  <g transform="translate(0, 50)">
+    <text x="400" y="20" font-family="Inter, sans-serif" font-weight="700" font-size="18" fill="#d9534f" text-anchor="middle">HIGH DRAG: MASSIVE WAKE SEPARATION</text>
+    
+    <!-- Wake shading -->
+    <path d="M 270,70 C 350,50 800,50 800,50 L 800,250 C 800,250 350,250 270,230 Z" fill="#d9534f" opacity="0.05" />
+    
+    <!-- Flat Plate -->
+    <rect x="250" y="80" width="20" height="140" class="shape" rx="4" />
+    
+    <!-- Incoming clean air separating over top -->
+    <path class="particle" style="animation-duration: 2s; animation-delay: 0s" d="M 0,100 C 150,100 220,100 240,70 C 260,40 300,50 800,50" />
+    <path class="particle" style="animation-duration: 2s; animation-delay: -1s" d="M 0,100 C 150,100 220,100 240,70 C 260,40 300,50 800,50" />
+    <path class="particle" style="animation-duration: 2s; animation-delay: -0.5s" d="M 0,120 L 220,120 C 220,120 220,70 240,60 C 260,30 300,40 800,40" />
+    
+    <!-- Incoming clean air separating under bottom -->
+    <path class="particle" style="animation-duration: 2s; animation-delay: -0.2s" d="M 0,200 C 150,200 220,200 240,230 C 260,260 300,250 800,250" />
+    <path class="particle" style="animation-duration: 2s; animation-delay: -1.2s" d="M 0,200 C 150,200 220,200 240,230 C 260,260 300,250 800,250" />
+    <path class="particle" style="animation-duration: 2s; animation-delay: -0.7s" d="M 0,180 L 220,180 C 220,180 220,230 240,240 C 260,270 300,260 800,260" />
+
+    <!-- Turbulent swirling wake -->
+    <path class="turbulent" style="animation-duration: 2.5s; animation-delay: 0s" d="M 280,100 Q 320,50 350,120 T 450,100 T 550,150 T 800,80" />
+    <path class="turbulent" style="animation-duration: 3s; animation-delay: -0.5s" d="M 280,200 Q 330,250 370,180 T 480,200 T 600,120 T 800,200" />
+    <path class="turbulent" style="animation-duration: 2.2s; animation-delay: -1.2s" d="M 280,150 Q 300,100 350,150 T 400,120 T 500,180 T 800,150" />
+    <path class="turbulent" style="animation-duration: 2.8s; animation-delay: -0.8s" d="M 280,120 Q 350,180 390,110 T 520,160 T 650,100 T 800,180" />
+  </g>
+
+  <!-- BOTTOM HALF: Teardrop (Low Drag) -->
+  <g transform="translate(0, 370)">
+    <text x="400" y="0" font-family="Inter, sans-serif" font-weight="700" font-size="18" fill="#175679" text-anchor="middle">LOW DRAG: SMOOTH ATTACHED FLOW</text>
+    
+    <!-- Wake shading (very thin line) -->
+    <path d="M 500,100 L 800,100" stroke="#175679" stroke-width="20" opacity="0.05" />
+    
+    <!-- Teardrop shape -->
+    <path class="shape" d="M 200,100 C 200,40 280,40 380,70 C 450,88 490,95 500,100 C 490,105 450,112 380,130 C 280,160 200,160 200,100 Z" />
+    
+    <!-- Attached flow over the teardrop top -->
+    <path class="particle" style="animation-duration: 1.8s; animation-delay: 0s" d="M 0,100 L 180,100 C 200,100 230,35 360,65 C 450,85 510,95 800,95" />
+    <path class="particle" style="animation-duration: 1.8s; animation-delay: -0.9s" d="M 0,100 L 180,100 C 200,100 230,35 360,65 C 450,85 510,95 800,95" />
+    
+    <!-- Attached flow over the teardrop bottom -->
+    <path class="particle" style="animation-duration: 1.8s; animation-delay: -0.4s" d="M 0,100 L 180,100 C 200,100 230,165 360,135 C 450,115 510,105 800,105" />
+    <path class="particle" style="animation-duration: 1.8s; animation-delay: -1.3s" d="M 0,100 L 180,100 C 200,100 230,165 360,135 C 450,115 510,105 800,105" />
+    
+    <!-- Outer flow top -->
+    <path class="particle" style="animation-duration: 2s; animation-delay: -0.2s" d="M 0,50 L 180,50 C 300,10 400,40 500,80 L 800,80" />
+    <path class="particle" style="animation-duration: 2s; animation-delay: -1.2s" d="M 0,50 L 180,50 C 300,10 400,40 500,80 L 800,80" />
+    
+    <!-- Outer flow bottom -->
+    <path class="particle" style="animation-duration: 2s; animation-delay: -0.7s" d="M 0,150 L 180,150 C 300,190 400,160 500,120 L 800,120" />
+    <path class="particle" style="animation-duration: 2s; animation-delay: -1.7s" d="M 0,150 L 180,150 C 300,190 400,160 500,120 L 800,120" />
+  </g>
+</svg>

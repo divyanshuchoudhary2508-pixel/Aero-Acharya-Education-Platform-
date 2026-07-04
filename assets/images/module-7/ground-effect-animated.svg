@@ -1,0 +1,73 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .car-floor { fill: #f8f5ed; stroke: #175679; stroke-width: 4; }
+      .track { stroke: #0a141c; stroke-width: 6; stroke-linecap: round; }
+      
+      .particle {
+        fill: none;
+        stroke: #2278a9;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-dasharray: 15 1000;
+        animation: over-flow 3s linear infinite;
+      }
+      
+      .venturi-particle {
+        stroke: #175679;
+        stroke-width: 4;
+        animation: venturi-flow 3s infinite;
+      }
+      
+      @keyframes over-flow {
+        from { stroke-dashoffset: 1000; }
+        to { stroke-dashoffset: 0; }
+      }
+      
+      /* The physics loop: Air speeds up significantly in the narrow throat, then slows in diffuser */
+      @keyframes venturi-flow {
+        0% { stroke-dashoffset: 1000; }
+        40% { stroke-dashoffset: 750; } /* Enters: Normal speed */
+        60% { stroke-dashoffset: 250; } /* Throat: Zips through 500 units very fast */
+        100% { stroke-dashoffset: 0; }  /* Diffuser: Slows down on exit */
+      }
+    </style>
+  </defs>
+
+  <!-- Track Surface -->
+  <line x1="50" y1="350" x2="750" y2="350" class="track" />
+  <text x="400" y="380" font-family="Inter, sans-serif" font-weight="700" font-size="16" fill="#0a141c" text-anchor="middle">TRACK SURFACE</text>
+
+  <!-- Flow lines under the car (Venturi Tunnels) -->
+  <path id="venturi1" class="particle venturi-particle" style="animation-delay: 0s" d="M 50,340 C 150,340 200,340 300,340 L 500,340 C 550,340 650,290 750,290" />
+  <path class="particle venturi-particle" style="animation-delay: -0.6s" d="M 50,340 C 150,340 200,340 300,340 L 500,340 C 550,340 650,290 750,290" />
+  <path class="particle venturi-particle" style="animation-delay: -1.2s" d="M 50,340 C 150,340 200,340 300,340 L 500,340 C 550,340 650,290 750,290" />
+  <path class="particle venturi-particle" style="animation-delay: -1.8s" d="M 50,340 C 150,340 200,340 300,340 L 500,340 C 550,340 650,290 750,290" />
+  <path class="particle venturi-particle" style="animation-delay: -2.4s" d="M 50,340 C 150,340 200,340 300,340 L 500,340 C 550,340 650,290 750,290" />
+  
+  <path id="venturi2" class="particle venturi-particle" style="animation-delay: -0.3s" d="M 50,330 C 150,330 200,335 300,335 L 500,335 C 550,335 650,270 750,270" />
+  <path class="particle venturi-particle" style="animation-delay: -0.9s" d="M 50,330 C 150,330 200,335 300,335 L 500,335 C 550,335 650,270 750,270" />
+  <path class="particle venturi-particle" style="animation-delay: -1.5s" d="M 50,330 C 150,330 200,335 300,335 L 500,335 C 550,335 650,270 750,270" />
+  <path class="particle venturi-particle" style="animation-delay: -2.1s" d="M 50,330 C 150,330 200,335 300,335 L 500,335 C 550,335 650,270 750,270" />
+  <path class="particle venturi-particle" style="animation-delay: -2.7s" d="M 50,330 C 150,330 200,335 300,335 L 500,335 C 550,335 650,270 750,270" />
+
+  <!-- Car Silhouette (Floor Section) -->
+  <path class="car-floor" d="M 100,280 C 150,280 200,320 300,325 L 500,325 C 550,325 650,250 700,240 L 700,100 C 500,80 300,100 100,180 Z" />
+  
+  <!-- Flow over the car (normal speed reference) -->
+  <path class="particle" style="animation-delay: 0s" d="M 50,200 C 80,150 150,80 350,50 C 550,20 650,70 750,150" />
+  <path class="particle" style="animation-delay: -1s" d="M 50,200 C 80,150 150,80 350,50 C 550,20 650,70 750,150" />
+  <path class="particle" style="animation-delay: -2s" d="M 50,200 C 80,150 150,80 350,50 C 550,20 650,70 750,150" />
+
+  <path class="particle" style="animation-delay: -0.5s" d="M 50,160 C 80,110 150,50 350,20 C 550,-10 650,40 750,120" />
+  <path class="particle" style="animation-delay: -1.5s" d="M 50,160 C 80,110 150,50 350,20 C 550,-10 650,40 750,120" />
+  <path class="particle" style="animation-delay: -2.5s" d="M 50,160 C 80,110 150,50 350,20 C 550,-10 650,40 750,120" />
+
+  <!-- Labels -->
+  <text x="400" y="220" font-family="Inter, sans-serif" font-weight="700" font-size="24" fill="#175679" text-anchor="middle">MASSIVE DOWNFORCE (GROUND EFFECT)</text>
+  <text x="400" y="250" font-family="Inter, sans-serif" font-weight="400" font-size="16" fill="#5c6d79" text-anchor="middle">Air is violently squeezed in the throat, creating extreme low pressure</text>
+  
+  <!-- Zone Labels -->
+  <text x="120" y="380" font-family="Inter, sans-serif" font-weight="700" font-size="14" fill="#5c6d79" text-anchor="middle">AIR ENTERS</text>
+  <text x="680" y="380" font-family="Inter, sans-serif" font-weight="700" font-size="14" fill="#5c6d79" text-anchor="middle">DIFFUSER EXPANDS</text>
+</svg>
