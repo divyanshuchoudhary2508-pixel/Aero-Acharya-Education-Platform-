@@ -75,7 +75,9 @@
   const MODULE_SLUGS = [
     'air-is-a-fluid','drag','lift-downforce','airfoil-mastery',
     'front-wing-engineer','rear-wing-master','venturi-theory',
-    'diffusers-floors','aero-balance','cooling-packaging'
+    'diffusers-floors','aero-balance','cooling-packaging',
+    'kart-aero-basics',
+    'wind-tunnel-testing','cfd-fundamentals'
   ];
 
   function renderHomepageProgress() {

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="manifest" href="../../manifest.json">
+  <meta name="theme-color" content="#175679">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <script src="../../assets/search-index.js" defer></script>
+  <script src="../../assets/quiz-data.js" defer></script>
+  <script src="../../assets/site.js" defer></script>
+  <script src="../../assets/search.js" defer></script>
+  <script src="../../assets/quiz.js" defer></script>
+  <script src="../../assets/enhancements.js" defer></script>
+  <script src="../../assets/achievements.js" defer></script>
+  <script src="../../assets/notes.js" defer></script>
+<!-- SEO TAGS -->
+  <title>CFD Fundamentals | Aero Acharya by Divyanshu Choudhary</title>
+  <meta name="description" content="Understand how CFD works — the mesh, the solver, turbulence models, and where the Aero Playground fits in the chain from simple formula to full simulation.">
+  <meta name="keywords" content="Aero Acharya, Divyanshu Choudhary, aerodynamics, aerodynamics course, learn aerodynamics, aerospace engineering, CFD basics, flight mechanics, aircraft design, motorsport aerodynamics">
+  <link rel="canonical" href="https://aeroacharya.netlify.app/modules/cfd-fundamentals/index.html">
+  
+  <meta property="og:title" content="CFD Fundamentals | Aero Acharya by Divyanshu Choudhary">
+  <meta property="og:description" content="Understand how CFD works — the mesh, the solver, turbulence models, and where the Aero Playground fits in the chain from simple formula to full simulation.">
+  <meta property="og:url" content="https://aeroacharya.netlify.app/modules/cfd-fundamentals/index.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Aero Acharya">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CFD Fundamentals | Aero Acharya by Divyanshu Choudhary">
+  <meta name="twitter:description" content="Understand how CFD works — the mesh, the solver, turbulence models, and where the Aero Playground fits in the chain from simple formula to full simulation.">
+  
+  <meta name="author" content="Divyanshu Choudhary">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "CFD Fundamentals | Aero Acharya by Divyanshu Choudhary",
+    "description": "Understand how CFD works — the mesh, the solver, turbulence models, and where the Aero Playground fits in the chain from simple formula to full simulation.",
+    "provider": {
+      "@type": "Person",
+      "name": "Divyanshu Choudhary",
+      "sameAs": "https://aeroacharya.netlify.app"
+    }
+  }
+  </script>
+  <!-- END SEO TAGS -->
+</head>
+<body>
+<div id="reading-progress-bar" style="position:fixed;top:0;left:0;width:100%;height:3px;z-index:998;background:transparent;pointer-events:none"><div id="reading-progress" style="height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--green));transition:width .1s linear"></div></div>
+<header class="site-header wrap"><a class="brand" href="../../"><span class="brand-mark">A</span>Aero Acharya</a><button class="menu-button" data-menu aria-label="Open menu">☰</button><nav data-nav><a href="../../#modules">Modules</a><a href="../../glossary.html">Glossary</a><a href="../../#about">About</a><button class="search-btn" data-search-open aria-label="Search lessons"><span>🔍</span><span>Search</span><kbd>Ctrl K</kbd></button><button class="theme-toggle" data-theme-toggle></button></nav></header>
+<div class="breadcrumb wrap"><a href="../../">Modules</a><span>›</span><span>Engineering Tools</span><span>›</span><b>CFD Fundamentals</b></div>
+<header class="lesson-hero wrap"><div><p class="kicker">ENGINEERING TOOLS · LESSON 13</p><h1>CFD<br>Fundamentals</h1><p class="hook">You have already used CFD in this course — just a very simplified version of it. This module explains exactly what that means.</p><div class="lesson-meta"><span>▷ About 14 minutes</span><span>◎ Connects back to the Aero Playground</span></div></div><div class="lesson-visual"><img src="../../assets/images/module-13/cfd-pressure-map.jpg" alt="CFD pressure map showing high and low pressure zones around a race car" width="1200" height="900"></div></header>
+<div class="lesson-layout"><aside class="toc"><span>IN THIS LESSON</span><a href="#intro">1 · A different module</a><a href="#what">2 · What CFD does</a><a href="#mesh">3 · The mesh</a><a href="#density">4 · Mesh density</a><a href="#turbulence">5 · Turbulence models</a><a href="#chain">6 · The analysis chain</a><a href="#together">7 · Bringing it together</a><div class="toc-note"><b>Connected to Module 3.</b><br>The Aero Playground you used earlier is CFD-lite — this lesson explains where it fits in the full picture.</div><div class="font-toggle"><button id="font-dec" aria-label="Decrease font size">A-</button><span>FONT</span><button id="font-inc" aria-label="Increase font size">A+</button></div></aside>
+<article class="lesson">
+<section id="intro"><p class="section-no">01 — A DIFFERENT KIND OF MODULE</p><h2>The tool you have already been using</h2><p class="lead">Most modules in this course introduce a new topic. This one explains a tool you have been using without fully knowing what it was.</p><p>Every time you adjusted a slider in the Aero Playground and watched downforce and drag numbers update instantly, you were using a simplified computational aerodynamics model. This module explains what that actually means, what real CFD does differently, and why the gap between the two matters.</p><div class="note"><b>What you will take away</b><p>By the end of this module, you will understand not just what CFD is, but where it sits in the chain of tools from simple estimation to full simulation — and why each level of that chain has its place in real engineering work.</p></div></section>
+<section id="what"><p class="section-no">02 — WHAT CFD ACTUALLY DOES</p><h2>Computational Fluid Dynamics — calculating, not guessing</h2><p>CFD stands for Computational Fluid Dynamics. It is the process of solving fluid dynamics problems — airflow problems — using computation rather than physical experiment.</p><p>The key word is <strong>calculates</strong>. CFD does not just guess or estimate. It numerically solves the actual mathematical equations that govern how fluids move — the same equations that describe real airflow in the real world.</p><div class="formula">Navier-Stokes equations → solved numerically across millions of cells<small>THE MATHEMATICAL HEART OF CFD</small></div><p>These equations, called the Navier-Stokes equations, describe how fluid velocity, pressure, and other properties relate to each other at every point in space and change over time. Solving them for a complex three-dimensional shape like a race car requires enormous computational power — which is why CFD became seriously practical only as computers became powerful enough.</p><figure class="concept"><img loading="lazy" src="../../assets/images/module-13/cfd-pressure-map.jpg" alt="CFD pressure map showing pressure distribution around a Formula 1 car"><figcaption>A CFD pressure map output: blue indicates low pressure (suction), red indicates high pressure (stagnation). This is what the calculation produces.</figcaption></figure></section>
+<section id="mesh"><p class="section-no">03 — THE MESH</p><h2>Dividing space into millions of tiny pieces</h2><p>The first step in any CFD simulation is building a <strong>mesh</strong> — a three-dimensional network of cells that fills the space around the object being studied. Think of it like dividing all the air around a car into millions of tiny boxes or tetrahedra, each one representing a small region of space.</p><p>The CFD solver then calculates the airflow properties — velocity, pressure, temperature — at each of these cells, one at a time, while also accounting for how each cell's conditions affect its neighboring cells. The equations are solved repeatedly across the entire mesh, updating all the values iteratively until the solution settles into a stable, consistent state. This process is called <strong>convergence</strong>.</p><figure class="concept"><img loading="lazy" src="../../assets/images/module-13/cfd-mesh.jpg" alt="CFD mesh around a car showing fine cells near surfaces and coarser cells further away"><figcaption>A typical CFD mesh: very fine cells near the car's surfaces where flow detail matters, progressively coarser cells further away.</figcaption></figure><div class="idea"><b>Why this is expensive</b><p>A typical Formula 1 car simulation might involve a mesh of anywhere from a few million to well over a hundred million cells. Each iteration of solving the equations across all those cells requires substantial computation. A single complete simulation can take hours or even days on a powerful computing cluster.</p></div></section>
+<section id="density"><p class="section-no">04 — MESH DENSITY</p><h2>Fine where it matters, coarse where it does not</h2><p>One of the most important decisions in setting up a CFD simulation is how fine or coarse to make the mesh in different regions.</p>
+<div class="three-cards">
+  <div class="info-card"><span>Fine</span><b>Near Surfaces</b><p>Very fine cells near the car's surfaces, around wing edges, and in wake regions. This captures small, detailed flow features accurately where the engineering decisions are made.</p></div>
+  <div class="info-card"><span>Coarse</span><b>Far Away</b><p>Larger cells spread further from the car where the flow is relatively simple. This runs much faster with no meaningful loss of accuracy where it matters.</p></div>
+  <div class="info-card"><span>Skill</span><b>The Balance</b><p>Too coarse in the wrong place produces inaccurate results. Too fine everywhere wastes enormous computation for no meaningful gain. Getting this balance right is a significant part of the skill in CFD simulation.</p></div>
+</div></section>
+<section id="turbulence"><p class="section-no">05 — TURBULENCE MODELS</p><h2>The necessary approximation — and the honest limitation</h2><p>The Navier-Stokes equations, if solved completely and exactly, would capture every detail of turbulent flow — every tiny swirl and eddy. However, the smallest turbulent structures in real airflow are far tinier than any practical mesh can resolve, even with the most powerful computers available.</p><p>Resolving every turbulent detail directly would require a mesh so fine that a single simulation would take longer than the age of the universe to compute.</p><div class="formula">Turbulence model → approximates turbulence effects without resolving every eddy<small>MAKES CFD PRACTICAL BUT INTRODUCES SOME ERROR</small></div><p>To make CFD practical, engineers use <strong>turbulence models</strong> — mathematical approximations that represent the average effect of turbulence without resolving every tiny detail. Different turbulence models exist, each with different levels of accuracy, computational cost, and suitability for different kinds of flows.</p><div class="note"><b>Why this matters for engineering judgment</b><p>This is one of the core reasons why CFD results need to be validated against wind tunnel measurements rather than simply trusted on their own. The turbulence model is an approximation — how well it approximates real turbulent behaviour depends on the specific flow situation. For some flows it works very well; for others it can introduce meaningful errors.</p></div></section>
+<section id="chain"><p class="section-no">06 — THE ANALYSIS CHAIN</p><h2>From simple formula to full simulation</h2><p>Now you have enough context to understand exactly where the Aero Playground sits in the chain of aerodynamic analysis tools.</p><figure class="concept"><img loading="lazy" src="../../assets/images/module-13/cfd-vs-wind-tunnel.jpg" alt="CFD versus wind tunnel — complementary tools for aerodynamic analysis"><figcaption>CFD and wind tunnels are complementary. Understanding where each sits in the chain helps engineers choose the right tool for the question being asked.</figcaption></figure>
+<div class="three-cards">
+  <div class="info-card"><span>↓</span><b>Simple Formulas</b><p>The thin airfoil theory and finite wing equations from Modules 3, 4, and 6. Fast, transparent, and useful for early design thinking — but assume idealized conditions and cannot capture complex 3D effects.</p></div>
+  <div class="info-card"><span>↑</span><b>Aero Playground (CFD-lite)</b><p>Uses the same underlying analytical formulas but packages them with a user-friendly interface. It is more accessible than full CFD, but still a collection of simplified formulas — not a numerical solution of the flow equations.</p></div>
+  <div class="info-card"><span>↑↑</span><b>Full CFD + Wind Tunnel</b><p>Full CFD solves the Navier-Stokes equations numerically, capturing 3D effects and separation. Wind tunnels provide physical measurement that validates CFD and captures phenomena that even advanced CFD can miss.</p></div>
+</div>
+<div class="idea"><b>The right tool for the question</b><p>Good engineering uses the right tool for the specific question being asked, rather than always reaching for the most powerful and expensive option. Simple formulas for early exploration. Full CFD for detailed design validation. Wind tunnels for physical ground truth.</p></div></section>
+<section id="together"><p class="section-no">07 — BRINGING IT TOGETHER</p><h2>Engineering literacy about the tools you use</h2><p>You have now used simplified aerodynamic estimation throughout this course, and you understand what full CFD does differently.</p><p>You know that the Aero Playground numbers are directionally useful but represent idealized conditions, not the complex three-dimensional reality of a real race car in airflow. You know that full CFD captures more of that reality, at significant computational cost, and that even full CFD uses turbulence model approximations that require validation against physical tests.</p><p>This is genuine, useful engineering literacy. Understanding not just what a tool produces, but what assumptions it makes and where those assumptions break down, is a foundational skill for anyone working with engineering analysis — whether in motorsport or anywhere else.</p>
+<div class="note"><b>Quick questions to think about</b><ul><li>Why does making the mesh finer everywhere not simply always produce better results, beyond just taking longer to compute?</li><li>If CFD turbulence models involve approximations, what does that suggest about how engineers should use CFD results?</li><li>Where in the chain from simple formula to full CFD to wind tunnel do you think the Aero Balance simulator from Module 9 sits, and why?</li></ul></div></section>
+<section class="references"><p class="section-no">GO DEEPER</p><h2>Books worth opening</h2><div><span>01</span><p><b>An Introduction to Computational Fluid Dynamics — Versteeg &amp; Malalasekera</b><small>A standard introductory CFD textbook covering the Navier-Stokes equations, meshing, and turbulence models in accessible technical detail.</small></p></div><div><span>02</span><p><b>Race Car Aerodynamics — Joseph Katz</b><small>Covers how CFD is applied specifically in motorsport alongside wind tunnel testing, providing useful context for how these tools are used together.</small></p></div><div><span>03</span><p><b>Free university CFD resources online</b><small>Numerous free introductory tutorials from universities and software providers provide a good next step for anyone who wants to move from conceptual understanding toward actually running CFD simulations.</small></p></div></section>
+<div id="quiz-section" data-lesson-slug="cfd-fundamentals"></div>
+<div class="mark-complete-wrap"><p>Finished reading this lesson?</p><button class="mark-complete-btn" data-slug="cfd-fundamentals" data-complete>✓ Mark as complete</button></div>
+<div id="notes-section" data-lesson-slug="cfd-fundamentals"></div>
+</article>
+</div>
+<footer class="site-footer-bar"><div class="wrap"><span>© Aero Acharya</span><a href="../../glossary.html">Glossary</a><a href="../../#about">About</a></div></footer>
+<div id="search-overlay" hidden><div class="search-box"><input id="search-input" type="search" placeholder="Search lessons…" autocomplete="off"><button data-search-close>✕</button></div><ul id="search-results"></ul></div>
+<div id="nav-drawer" hidden><nav><a href="../../#modules">Modules</a><a href="../../glossary.html">Glossary</a><a href="../../#about">About</a></nav></div>
+</body>
+</html>

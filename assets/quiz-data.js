@@ -274,6 +274,37 @@ window.AERO_QUIZ = {
     ]
   },
 
+  
+  "kart-aero-basics": {
+    title: "Kart Aero Basics",
+    questions: [
+      {
+        q: "Why is aerodynamics often less critical in karting compared to Formula 1?",
+        opts: ["Karts are too heavy","Downforce rises with the square of speed, and karts travel at much lower speeds","Air density is different for karts","Karts do not have engines"],
+        correct: 1,
+        explanation: "Because aerodynamic force rises with the square of velocity, the relatively low speeds of most karts mean they generate far less aerodynamic force compared to a full-size race car."
+      },
+      {
+        q: "In karting, which component usually causes the most aerodynamic drag?",
+        opts: ["The wheels","The engine","The driver's body","The front fairing"],
+        correct: 2,
+        explanation: "The driver sits exposed and creates a massive, un-aerodynamic shape relative to the size of the kart itself, dominating the overall drag profile."
+      },
+      {
+        q: "What is the primary aerodynamic benefit of a driver 'tucking' their head down on a straight?",
+        opts: ["It increases downforce","It improves engine cooling","It reduces frontal area and drag","It shifts weight to the rear wheels"],
+        correct: 2,
+        explanation: "Tucking the head and shoulders reduces the driver's frontal area, which directly reduces overall aerodynamic drag, leading to a higher top speed on straights."
+      },
+      {
+        q: "What is the main purpose of the plastic nose cone and side pods on a standard racing kart?",
+        opts: ["To generate massive downforce","Primarily for safety and deflecting air around the driver's legs/wheels, rather than significant downforce","To cool the tyres","To act as a diffuser"],
+        correct: 1,
+        explanation: "While they have some aerodynamic shape to reduce drag, their primary functions are crash safety, wheel protection, and smoothing airflow around the driver's lower body, not generating downforce."
+      }
+    ]
+  },
+
   "cooling-packaging": {
     title: "Cooling & Packaging",
     questions: [
@@ -302,5 +333,64 @@ window.AERO_QUIZ = {
         explanation: "A narrower, tighter body exposes less frontal area to drag and keeps the sidepod surfaces from blocking airflow to the rear floor and diffuser. That is why teams invest heavily in packaging the mechanical components as tightly as possible."
       }
     ]
+  },
+  "wind-tunnel-testing": {
+    title: "Wind Tunnel Testing",
+    questions: [
+      {
+        q: "What is the fundamental physical principle that makes wind tunnels useful?",
+        opts: ["Air behaves differently at scale","The relative speed between object and air produces the same aerodynamic forces whether the object moves or the air moves","Wind tunnels heat air to increase pressure","The model must match the car's weight exactly"],
+        correct: 1,
+        explanation: "A car travelling at 200 km/h experiences the same aerodynamic forces as a stationary car with 200 km/h airflow past it — as long as the air properties and shape are the same. This equivalence is what makes wind tunnels physically valid."
+      },
+      {
+        q: "What does a 'force balance' measure in a wind tunnel test?",
+        opts: ["The speed of the airflow","The temperature inside the tunnel","Actual aerodynamic forces such as downforce and drag","The scale of the model"],
+        correct: 2,
+        explanation: "Force balances are precision instruments that directly measure the aerodynamic forces acting on the test model — including downforce, drag, and side forces. They provide the quantitative numbers engineers need to compare design configurations."
+      },
+      {
+        q: "Why do modern motorsport wind tunnels use a moving belt ground plane?",
+        opts: ["To spin the model during testing","To reduce friction on the model's wheels","To accurately simulate the moving track surface beneath the car and avoid boundary layer distortion","To increase the airflow speed"],
+        correct: 2,
+        explanation: "A stationary tunnel floor creates a boundary layer — a slow-moving region of air at the floor surface — that does not accurately represent the real car's experience. A moving belt eliminates this boundary layer and is essential for accurate ground effect testing."
+      },
+      {
+        q: "How do CFD and wind tunnel testing relate to each other in professional motorsport?",
+        opts: ["CFD has completely replaced wind tunnels","Wind tunnels have been banned in motorsport","They are complementary — CFD for fast design exploration, wind tunnels for physical validation and measurement","They produce identical results so teams use whichever is cheaper"],
+        correct: 2,
+        explanation: "CFD is flexible and fast for exploring many design variants, but depends on turbulence model approximations that can introduce errors. Wind tunnels provide physical measurements that validate CFD predictions. The combination gives engineers more confidence than either tool alone."
+      }
+    ]
+  },
+  "cfd-fundamentals": {
+    title: "CFD Fundamentals",
+    questions: [
+      {
+        q: "What equations does CFD numerically solve?",
+        opts: ["Newton's laws of motion only","The Bernoulli equation","The Navier-Stokes equations","The drag coefficient formula"],
+        correct: 2,
+        explanation: "CFD numerically solves the Navier-Stokes equations — the actual mathematical equations governing how fluids move. These describe how fluid velocity, pressure, and other properties relate to each other at every point in space and change over time."
+      },
+      {
+        q: "What is a 'mesh' in CFD?",
+        opts: ["A screen that filters the airflow","A three-dimensional network of cells filling the space around the object being studied","A type of turbulence model","A scale model of the car"],
+        correct: 1,
+        explanation: "The mesh divides all the space around the object into millions of tiny cells. The CFD solver calculates airflow properties at each cell and solves the equations iteratively across the entire mesh until convergence — a stable, consistent solution."
+      },
+      {
+        q: "Why do CFD engineers use very fine mesh cells near the car's surfaces and coarser cells further away?",
+        opts: ["Because the computer can only handle a fixed number of cells total","Fine cells near surfaces capture detailed flow features where it matters most, while coarser cells elsewhere save computation without losing accuracy","The regulations require it","Surface cells must match the car's paint finish"],
+        correct: 1,
+        explanation: "Flow near surfaces — around wing edges, separation points, and wake regions — is complex and the engineering decisions depend on getting it right. Far from the car, the flow is relatively simple. Non-uniform mesh density allows engineers to spend computational resources where they actually matter."
+      },
+      {
+        q: "Why do CFD turbulence models introduce some error into simulations?",
+        opts: ["Because computers cannot solve equations accurately","The models approximate turbulence effects rather than resolving every tiny turbulent structure, which would require impossibly fine meshes","Because temperature is not accounted for","The Navier-Stokes equations have not been solved correctly yet"],
+        correct: 1,
+        explanation: "The smallest turbulent eddies in real airflow are far tinier than any practical mesh can resolve. Turbulence models approximate their average effect — making CFD practical — but the approximation introduces errors that vary by flow type. This is why CFD results need validation against physical measurements."
+      }
+    ]
   }
+
 };

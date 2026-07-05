@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="manifest" href="../../manifest.json">
+  <meta name="theme-color" content="#175679">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <script src="../../assets/search-index.js" defer></script>
+  <script src="../../assets/quiz-data.js" defer></script>
+  <script src="../../assets/site.js" defer></script>
+  <script src="../../assets/search.js" defer></script>
+  <script src="../../assets/quiz.js" defer></script>
+  <script src="../../assets/enhancements.js" defer></script>
+  <script src="../../assets/achievements.js" defer></script>
+  <script src="../../assets/notes.js" defer></script>
+<!-- SEO TAGS -->
+  <title>Kart Aero Basics | Aero Acharya by Divyanshu Choudhary</title>
+  <meta name="description" content="Learn why kart aero is a different game: speed squared, body drag, upright vs tucked driving and real-world scale.">
+  <meta name="keywords" content="Aero Acharya, Divyanshu Choudhary, aerodynamics, aerodynamics course, learn aerodynamics, aerospace engineering, CFD basics, flight mechanics, aircraft design, motorsport aerodynamics">
+  <link rel="canonical" href="https://aeroacharya.netlify.app/modules/kart-aero-basics/index.html">
+  
+  <meta property="og:title" content="Kart Aero Basics | Aero Acharya by Divyanshu Choudhary">
+  <meta property="og:description" content="Learn why kart aero is a different game: speed squared, body drag, upright vs tucked driving and real-world scale.">
+  <meta property="og:url" content="https://aeroacharya.netlify.app/modules/kart-aero-basics/index.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Aero Acharya">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kart Aero Basics | Aero Acharya by Divyanshu Choudhary">
+  <meta name="twitter:description" content="Learn why kart aero is a different game: speed squared, body drag, upright vs tucked driving and real-world scale.">
+  
+  <meta name="author" content="Divyanshu Choudhary">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Kart Aero Basics | Aero Acharya by Divyanshu Choudhary",
+    "description": "Learn why kart aero is a different game: speed squared, body drag, upright vs tucked driving and real-world scale.",
+    "provider": {
+      "@type": "Person",
+      "name": "Divyanshu Choudhary",
+      "sameAs": "https://aeroacharya.netlify.app"
+    }
+  }
+  </script>
+  <!-- END SEO TAGS -->
+</head>
+<body>
+<div id="reading-progress-bar" style="position:fixed;top:0;left:0;width:100%;height:3px;z-index:998;background:transparent;pointer-events:none"><div id="reading-progress" style="height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--green));transition:width .1s linear"></div></div>
+<header class="site-header wrap"><a class="brand" href="../../"><span class="brand-mark">A</span>Aero Acharya</a><button class="menu-button" data-menu aria-label="Open menu">☰</button><nav data-nav><a href="../../#modules">Modules</a><a href="../../glossary.html">Glossary</a><a href="../../#about">About</a><button class="search-btn" data-search-open aria-label="Search lessons"><span>🔍</span><span>Search</span><kbd>Ctrl K</kbd></button><button class="theme-toggle" data-theme-toggle></button></nav></header>
+<div class="breadcrumb wrap"><a href="../../">Modules</a><span>›</span><span>Speed &amp; Scale</span><span>›</span><b>Kart Aero Basics</b></div>
+<header class="lesson-hero wrap">
+  <div>
+    <p class="kicker">SPEED &amp; SCALE · LESSON 11</p>
+    <h1>Kart Aero<br>Basics</h1>
+    <p class="hook">At kart speeds, the biggest aero lesson is not “make it like F1” — it is understanding that speed, body drag and driver position change everything.</p>
+    <div class="lesson-meta"><span>▷ About 12 minutes</span><span>◇ Beginner friendly</span></div>
+  </div>
+  <div class="lesson-visual"><img src="../../assets/images/module-11/kart-speed.jpg" alt="Downforce rising with speed across kart, club car and F1 car" width="1536" height="1024"></div>
+</header>
+<div class="lesson-layout">
+  <aside class="toc">
+    <span>IN THIS LESSON</span>
+    <a href="#why">1 · Why kart aero is different</a>
+    <a href="#speed">2 · Speed squared again</a>
+    <a href="#driver">3 · The driver is the big drag source</a>
+    <a href="#position">4 · Upright vs tucked</a>
+    <a href="#parts">5 · Kart parts and packaging</a>
+    <a href="#wrap">6 · What to remember</a>
+    <div class="toc-note"><b>Small scale, big lesson.</b><br>Karting teaches aerodynamics by showing what happens when speed is lower and the human body matters more.</div>
+    <div class="font-toggle"><button id="font-dec" aria-label="Decrease font size">A-</button><span>FONT</span><button id="font-inc" aria-label="Increase font size">A+</button></div>
+  </aside>
+  <article class="lesson">
+    <section id="why">
+      <p class="section-no">01 — WHY THIS LESSON EXISTS</p>
+      <h2>Kart aero is a different size problem</h2>
+      <p class="lead">A kart is not a tiny Formula 1 car. It lives in a lower speed band, so aerodynamic force is much smaller — but the same physics still applies.</p>
+      <p>The main takeaway is scale. At kart speeds, aero is usually less dominant than on a race car, so the driver body, seating position and basic packaging matter a lot.</p>
+    </section>
+    <section id="speed">
+      <p class="section-no">02 — SPEED STILL RULES</p>
+      <h2>Downforce rises with the square of speed</h2>
+      <p>That square-speed rule from earlier lessons still applies here. If speed goes up, aerodynamic load rises much faster than people expect.</p>
+      <figure class="concept"><img loading="lazy" src="../../assets/images/module-11/kart-speed.jpg" alt="Downforce increasing with speed for go-kart, club car and F1 car"><figcaption>From kart to F1, the speed gap changes how much air can push back.</figcaption></figure>
+      <div class="formula">More speed → much more aero force<small>THE SAME RULE, JUST A DIFFERENT SCALE</small></div>
+    </section>
+    <section id="driver">
+      <p class="section-no">03 — THE BIGGEST DRAG SOURCE</p>
+      <h2>The driver usually matters more than the kart body</h2>
+      <p>At kart speed, the driver’s shape can create more drag than the kart itself. That is why a helmet, shoulders, arms and upright posture become such important aerodynamic features.</p>
+      <figure class="concept"><img loading="lazy" src="../../assets/images/module-11/kart-body-drag.jpg" alt="Driver body versus kart body drag profile"><figcaption>The biggest drag source on the kart is often the thing sitting in it.</figcaption></figure>
+      <div class="idea"><b>Simple memory</b><p>If your body is tall and wide to the airflow, it pushes more air out of the way. If you shrink your exposed shape, drag drops.</p></div>
+    </section>
+    <section id="position">
+      <p class="section-no">04 — RIDER POSITION</p>
+      <h2>Upright vs tucked</h2>
+      <p>Leaned-back and tucked positions reduce frontal area. Upright positions are easier to drive, but they leave more body in the airflow.</p>
+      <figure class="concept"><img loading="lazy" src="../../assets/images/module-11/upright-vs-tucked.jpg" alt="Upright and tucked kart driver comparison"><figcaption>The tucked driver gives the air less to hit.</figcaption></figure>
+      <div class="two-cards">
+        <div class="info-card"><span>01</span><b>Upright</b><p>More frontal area, more drag, but sometimes easier comfort and control.</p></div>
+        <div class="info-card"><span>02</span><b>Tucked</b><p>Less frontal area, less drag, and a cleaner shape through the air.</p></div>
+      </div>
+    </section>
+    <section id="parts">
+      <p class="section-no">05 — WHAT THE KART DOES CARE ABOUT</p>
+      <h2>Nose cone, side pods and rear fairing</h2>
+      <p>The kart body still has jobs: protect the driver, guide air, and keep the package compact. But the aero ambition is much simpler than a race car.</p>
+      <figure class="concept"><img loading="lazy" src="../../assets/images/module-11/kart-parts.jpg" alt="Kart parts annotated with nose cone, side pods and rear fairing"><figcaption>Protection first, aero shaping second.</figcaption></figure>
+      <div class="three-cards">
+        <div class="info-card"><span>01</span><b>Nose cone</b><p>Protection first, some shaping second.</p></div>
+        <div class="info-card"><span>02</span><b>Side pods</b><p>Protect driver and components while staying compact.</p></div>
+        <div class="info-card"><span>03</span><b>Rear fairing</b><p>Can smooth the wake a little, but only within the rules.</p></div>
+      </div>
+    </section>
+    <section id="wrap">
+      <p class="section-no">06 — WHAT TO REMEMBER</p>
+      <h2>The beginner lesson from karting</h2>
+      <p>Kart aero teaches you not to over-apply F1 thinking. At lower speeds, the driver body and seating position can matter more than fancy aero parts.</p>
+      <figure class="concept"><img loading="lazy" src="../../assets/images/module-11/kart-speed.jpg" alt="Kart, club car and F1 downforce speed comparison"><figcaption>F1 looks extreme because it lives in a completely different speed world.</figcaption></figure>
+      <section class="references">
+        <p class="section-no">GO DEEPER</p>
+        <h2>Books worth opening</h2>
+        <div><span>01</span><p><b>Competition Car Aerodynamics — Simon McBeath</b><small>Good broader context for cars, drag and packaging.</small></p></div>
+        <div><span>02</span><p><b>Race Car Aerodynamics — Joseph Katz</b><small>Useful for understanding why speed and load scale so differently.</small></p></div>
+        <div><span>03</span><p><b>Any basic aerodynamics primer</b><small>Especially helpful for seeing that different speed ranges change the whole game.</small></p></div>
+      </section>
+    </section>
+    <div id="lesson-quiz"></div>
+    <div class="mark-complete-wrap"><p>Finished this lesson? Mark it as complete to track your progress.</p><button class="mark-complete-btn" aria-label="Mark lesson as complete">✓ Mark as complete</button></div>
+    <nav class="lesson-nav"><a href="../cooling-packaging/"><small>PREVIOUS LESSON</small><b>← Cooling &amp; Packaging</b></a><a href="../../"><small>BACK TO MODULES</small><b>Homepage →</b></a></nav>
+  </article>
+</div>
+<button id="back-to-top" aria-label="Back to top">↑ Top</button>
+</body>
+</html>

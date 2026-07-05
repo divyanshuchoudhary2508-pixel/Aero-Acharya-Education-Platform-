@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="manifest" href="../../manifest.json">
+  <meta name="theme-color" content="#175679">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <script src="../../assets/search-index.js" defer></script>
+  <script src="../../assets/quiz-data.js" defer></script>
+  <script src="../../assets/site.js" defer></script>
+  <script src="../../assets/search.js" defer></script>
+  <script src="../../assets/quiz.js" defer></script>
+  <script src="../../assets/enhancements.js" defer></script>
+  <script src="../../assets/achievements.js" defer></script>
+  <script src="../../assets/notes.js" defer></script>
+<!-- SEO TAGS -->
+  <title>Wind Tunnel Testing | Aero Acharya by Divyanshu Choudhary</title>
+  <meta name="description" content="Learn how wind tunnels work, what engineers actually measure inside them, and why they remain essential alongside CFD in motorsport.">
+  <meta name="keywords" content="Aero Acharya, Divyanshu Choudhary, aerodynamics, aerodynamics course, learn aerodynamics, aerospace engineering, CFD basics, flight mechanics, aircraft design, motorsport aerodynamics">
+  <link rel="canonical" href="https://aeroacharya.netlify.app/modules/wind-tunnel-testing/index.html">
+  
+  <meta property="og:title" content="Wind Tunnel Testing | Aero Acharya by Divyanshu Choudhary">
+  <meta property="og:description" content="Learn how wind tunnels work, what engineers actually measure inside them, and why they remain essential alongside CFD in motorsport.">
+  <meta property="og:url" content="https://aeroacharya.netlify.app/modules/wind-tunnel-testing/index.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Aero Acharya">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wind Tunnel Testing | Aero Acharya by Divyanshu Choudhary">
+  <meta name="twitter:description" content="Learn how wind tunnels work, what engineers actually measure inside them, and why they remain essential alongside CFD in motorsport.">
+  
+  <meta name="author" content="Divyanshu Choudhary">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Wind Tunnel Testing | Aero Acharya by Divyanshu Choudhary",
+    "description": "Learn how wind tunnels work, what engineers actually measure inside them, and why they remain essential alongside CFD in motorsport.",
+    "provider": {
+      "@type": "Person",
+      "name": "Divyanshu Choudhary",
+      "sameAs": "https://aeroacharya.netlify.app"
+    }
+  }
+  </script>
+  <!-- END SEO TAGS -->
+</head>
+<body>
+<div id="reading-progress-bar" style="position:fixed;top:0;left:0;width:100%;height:3px;z-index:998;background:transparent;pointer-events:none"><div id="reading-progress" style="height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--green));transition:width .1s linear"></div></div>
+<header class="site-header wrap"><a class="brand" href="../../"><span class="brand-mark">A</span>Aero Acharya</a><button class="menu-button" data-menu aria-label="Open menu">☰</button><nav data-nav><a href="../../#modules">Modules</a><a href="../../glossary.html">Glossary</a><a href="../../#about">About</a><button class="search-btn" data-search-open aria-label="Search lessons"><span>🔍</span><span>Search</span><kbd>Ctrl K</kbd></button><button class="theme-toggle" data-theme-toggle></button></nav></header>
+<div class="breadcrumb wrap"><a href="../../">Modules</a><span>›</span><span>Engineering Tools</span><span>›</span><b>Wind Tunnel Testing</b></div>
+<header class="lesson-hero wrap"><div><p class="kicker">ENGINEERING TOOLS · LESSON 12</p><h1>Wind Tunnel<br>Testing</h1><p class="hook">Before any aerodynamic idea can be trusted on a race track, it has to be tested somewhere — and for over a century, that somewhere has been a wind tunnel.</p><div class="lesson-meta"><span>▷ About 15 minutes</span><span>◎ Conceptual — no simulator</span></div></div><div class="lesson-visual"><img src="../../assets/images/module-12/wind-tunnel-layout.jpg" alt="Wind tunnel cross-section diagram showing fan, settling section, test section and diffuser" width="1200" height="900"></div></header>
+<div class="lesson-layout"><aside class="toc"><span>IN THIS LESSON</span><a href="#honest">1 · Honest note</a><a href="#what">2 · What a wind tunnel is</a><a href="#measure">3 · What gets measured</a><a href="#scale">4 · Scale models</a><a href="#ground">5 · Moving ground plane</a><a href="#cfd">6 · CFD vs tunnel</a><a href="#summary">7 · Bringing it together</a><div class="toc-note"><b>No virtual simulator.</b><br>A wind tunnel simulator without real physics equations would be misleading — so this lesson focuses on honest understanding instead.</div><div class="font-toggle"><button id="font-dec" aria-label="Decrease font size">A-</button><span>FONT</span><button id="font-inc" aria-label="Increase font size">A+</button></div></aside>
+<article class="lesson">
+<section id="honest"><p class="section-no">01 — HONEST NOTE</p><h2>Why this lesson has no virtual wind tunnel</h2><p class="lead">A virtual wind tunnel, to mean anything technically honest, would need to solve the same fluid equations a real wind tunnel physically solves.</p><p>That is exactly what CFD software does. Without that level of computation behind it, a "virtual wind tunnel" would produce pictures that look like wind tunnel output but carry no real predictive value. That kind of visual without substance would be more misleading than not having the feature at all.</p><p>So instead, this module teaches you what a real wind tunnel actually is, how it works, what it can and cannot tell engineers, and why it remains an important tool in motorsport even in an era when CFD is highly capable.</p></section>
+<section id="what"><p class="section-no">02 — THE PHYSICAL TOOL</p><h2>What a wind tunnel actually is</h2><p>A wind tunnel is a precisely engineered tube or chamber through which air is forced to flow at controlled speeds, with a test object — usually a scale model of the car or a full-size component — placed inside it. Instead of moving the car through air, the wind tunnel moves the air past a stationary object, which produces the same aerodynamic effect.</p><p>This equivalence is the fundamental physical principle that makes wind tunnels useful. A car traveling at 200 km/h experiences the same aerodynamic forces as a stationary car in a tunnel with 200 km/h air flowing past it, as long as the air properties and shape being tested are the same.</p><figure class="concept"><img loading="lazy" src="../../assets/images/module-12/wind-tunnel-layout.jpg" alt="Wind tunnel cross-section: fan, settling section, test section, diffuser section"><figcaption>The four main sections of a wind tunnel: fan, settling section (where flow becomes uniform), test section (where the model sits), and the diffuser exit.</figcaption></figure><div class="idea"><b>The core equivalence</b><p>What matters physically is the <em>relative speed</em> between object and air — not which one is actually moving. This allows engineers to study aerodynamic behavior in a controlled, repeatable, measurable environment.</p></div></section>
+<section id="measure"><p class="section-no">03 — WHAT ENGINEERS MEASURE</p><h2>Three measurement techniques</h2><p>Simply looking at a model in a wind tunnel tells you relatively little. The real value comes from precise measurement.</p><figure class="concept"><img loading="lazy" src="../../assets/images/module-12/measurement-techniques.jpg" alt="Three measurement techniques: force balance, pressure taps, and flow visualization"><figcaption>Force balances give numbers. Pressure taps map surfaces. Flow visualization makes the invisible visible.</figcaption></figure>
+<div class="three-cards">
+  <div class="info-card"><span>01</span><b>Force Balance</b><p>Instruments that measure actual aerodynamic forces — downforce, drag, side forces — with high precision. A wing producing 5% more downforce for the same drag is a real, meaningful result a force balance establishes clearly.</p></div>
+  <div class="info-card"><span>02</span><b>Pressure Taps</b><p>Small holes drilled into the model's surface, connected to pressure instruments. They map the actual pressure distribution across a surface — showing exactly where high and low pressure occurs in the way the diagrams throughout this course have illustrated conceptually.</p></div>
+  <div class="info-card"><span>03</span><b>Flow Visualisation</b><p>Smoke traces streamlines, tufts show whether flow is attached or separated, and pressure-sensitive paint produces a full-surface color map of pressure in a single image. These techniques make the invisible visible.</p></div>
+</div></section>
+<section id="scale"><p class="section-no">04 — SCALE MODELS</p><h2>Why smaller models are used — and why it is complicated</h2><p>Wind tunnel testing in motorsport is often done using scale models. Common scales in Formula 1 include 60% scale models. A full-size car requires an enormous wind tunnel, and building a large enough tunnel is extremely expensive.</p><p>However, using a scale model introduces a technical complication. Aerodynamic behaviour depends not only on shape but on a dimensionless quantity called the <strong>Reynolds number</strong>, which captures the relationship between the object's size, airflow speed, and air properties.</p><div class="formula">Smaller model → must run at higher tunnel speed<small>TO MATCH THE REYNOLDS NUMBER OF THE REAL CAR</small></div><p>Getting this matching right is a real engineering challenge. Results from scale model tests sometimes need careful interpretation when applied to full-size car predictions.</p></section>
+<section id="ground"><p class="section-no">05 — MOVING GROUND PLANE</p><h2>Why the floor of the tunnel matters enormously</h2><p>One of the most important details in motorsport wind tunnel testing is the <strong>ground plane</strong> — the surface below the car model representing the track surface.</p><p>In a basic wind tunnel, the floor is stationary. But the real car drives over a track that is moving relative to the car. From the car's perspective, the ground moves past underneath it.</p><figure class="concept"><img loading="lazy" src="../../assets/images/module-12/moving-ground-plane.jpg" alt="Moving belt ground plane vs stationary floor comparison in a wind tunnel"><figcaption>A stationary tunnel floor creates a boundary layer that can significantly distort underbody and diffuser performance measurements.</figcaption></figure><p>Modern motorsport wind tunnels use a <strong>moving belt ground plane</strong> — essentially a large treadmill running at the same speed as the tunnel airflow — to accurately simulate the moving ground surface. This makes wind tunnel facilities substantially more complex and expensive, but is considered essential for accurate ground effect testing.</p><div class="note"><b>Connection to Modules 7 &amp; 8</b><p>This directly relates to the ground effect and diffuser content you studied earlier. The aerodynamic behaviour of the car's underbody depends sensitively on the airflow conditions right at the ground plane, which is why getting the ground simulation right is so important.</p></div></section>
+<section id="cfd"><p class="section-no">06 — CFD AND WIND TUNNELS</p><h2>Complementary tools, not competing ones</h2><p>If CFD can simulate airflow computationally, why do teams still bother with physical wind tunnels?</p><figure class="concept"><img loading="lazy" src="../../assets/images/module-12/cfd-wind-tunnel-partners.jpg" alt="CFD vs Wind Tunnel comparison showing complementary roles"><figcaption>CFD and wind tunnels are used together. Each has strengths the other lacks.</figcaption></figure>
+<div class="three-cards">
+  <div class="info-card"><span>CFD</span><b>Flexibility &amp; Speed</b><p>Extremely flexible and fast for exploring a large number of design variants. No physical model needs to be built. Teams can test hundreds of geometry changes computationally.</p></div>
+  <div class="info-card"><span>WT</span><b>Physical Validation</b><p>Provides physical measurements that can validate or challenge CFD predictions. CFD depends on turbulence model approximations — the wind tunnel tells you whether those approximations held up.</p></div>
+  <div class="info-card"><span>F1</span><b>Regulated Access</b><p>Formula 1 directly restricts both wind tunnel testing time and CFD hours, precisely because both tools are expensive. This makes wind tunnel access a genuinely strategic resource.</p></div>
+</div></section>
+<section id="summary"><p class="section-no">07 — BRINGING IT TOGETHER</p><h2>The tool that makes aerodynamics physical</h2><p>Every concept taught in this course — pressure differences, downforce, drag, flow separation, ground effect — has been described through words, diagrams, and formulas. A wind tunnel is where these concepts become physically real and measurable.</p><p>You can literally see smoke following a streamline, watch a tuft flutter to show flow separation, and read a precise downforce number from a force balance. Understanding what wind tunnels do is genuinely part of understanding how aerodynamic knowledge is created and validated in the real world.</p>
+<div class="formula">Wind tunnel: moves air past a stationary model<small>SAME AERODYNAMIC RESULT AS MOVING THE CAR THROUGH STILL AIR</small></div>
+<div class="note"><b>Quick questions to think about</b><ul><li>Why does using a scale model require adjusting test conditions, rather than simply running the tunnel at the same speed the real car travels?</li><li>Why is a moving belt ground plane essential for accurate underbody testing, not just a stationary tunnel floor?</li><li>If CFD is faster and more flexible, why do top teams still invest in physical wind tunnel facilities?</li></ul></div></section>
+<section class="references"><p class="section-no">GO DEEPER</p><h2>Books worth opening</h2><div><span>01</span><p><b>Race Car Aerodynamics — Joseph Katz</b><small>Includes a dedicated chapter on wind tunnel testing methods and their application to motorsport.</small></p></div><div><span>02</span><p><b>Competition Car Aerodynamics — Simon McBeath</b><small>Covers wind tunnel testing from a practical motorsport engineering perspective, including scale models and moving ground planes.</small></p></div><div><span>03</span><p><b>Official technical regulations</b><small>Formula 1 wind tunnel and CFD regulations provide real-world context for how these tools are strategically managed at the top level.</small></p></div></section>
+<div id="quiz-section" data-lesson-slug="wind-tunnel-testing"></div>
+<div class="mark-complete-wrap"><p>Finished reading this lesson?</p><button class="mark-complete-btn" data-slug="wind-tunnel-testing" data-complete>✓ Mark as complete</button></div>
+<div id="notes-section" data-lesson-slug="wind-tunnel-testing"></div>
+</article>
+</div>
+<footer class="site-footer-bar"><div class="wrap"><span>© Aero Acharya</span><a href="../../glossary.html">Glossary</a><a href="../../#about">About</a></div></footer>
+<div id="search-overlay" hidden><div class="search-box"><input id="search-input" type="search" placeholder="Search lessons…" autocomplete="off"><button data-search-close>✕</button></div><ul id="search-results"></ul></div>
+<div id="nav-drawer" hidden><nav><a href="../../#modules">Modules</a><a href="../../glossary.html">Glossary</a><a href="../../#about">About</a></nav></div>
+</body>
+</html>

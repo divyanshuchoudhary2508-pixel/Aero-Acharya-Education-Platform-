@@ -21,8 +21,8 @@ const ACHIEVEMENTS = [
     id: 'graduate',
     icon: '🎓',
     title: 'Graduate',
-    desc: 'Completed all 10 lessons',
-    check: (prog) => Object.values(prog).filter(v => v === 'done').length >= 10
+    desc: 'Completed all 13 lessons',
+    check: (prog) => Object.values(prog).filter(v => v === 'done').length >= 13
   },
   {
     id: 'sharp-mind',
@@ -35,9 +35,9 @@ const ACHIEVEMENTS = [
     id: 'perfect-scholar',
     icon: '🏆',
     title: 'Perfect Scholar',
-    desc: 'Scored 100% on all 10 quizzes',
+    desc: 'Scored 100% on all 13 quizzes',
     check: (prog, scores) => {
-      const slugs = ['air-is-a-fluid','drag','lift-downforce','airfoil-mastery','front-wing-engineer','rear-wing-master','venturi-theory','diffusers-floors','aero-balance','cooling-packaging'];
+      const slugs = ['air-is-a-fluid','drag','lift-downforce','airfoil-mastery','front-wing-engineer','rear-wing-master','venturi-theory','diffusers-floors','aero-balance','cooling-packaging','kart-aero-basics','wind-tunnel-testing','cfd-fundamentals'];
       return slugs.every(s => scores[s] && scores[s].score === scores[s].total);
     }
   },
@@ -187,7 +187,7 @@ function renderBadges() {
 function openCertificate() {
   const prog = loadProg();
   const done = Object.values(prog).filter(v => v === 'done').length;
-  if (done < 10) {
+  if (done < 13) {
     alert('Complete all 10 lessons to earn your certificate! You\'ve finished ' + done + ' / 10 so far.');
     return;
   }
@@ -220,7 +220,7 @@ function openCertificate() {
           <div class="cert-footer-row">
             <div><span class="cert-date" id="cert-date"></span><small>DATE COMPLETED</small></div>
             <div class="cert-brand"><span style="font:italic 28px Georgia,serif;color:var(--blue2)">A</span><span>Aero Acharya</span></div>
-            <div><span>10 / 10</span><small>LESSONS COMPLETE</small></div>
+            <div><span>13 / 13</span><small>LESSONS COMPLETE</small></div>
           </div>
         </div>
         <div class="cert-actions">
